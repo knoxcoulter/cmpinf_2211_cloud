@@ -1,0 +1,3466 @@
+[
+    {
+        "patient_info": {
+            "_id": {
+                "$oid": "699690a19d664b27a141ad26"
+            },
+            "patient_id": 1,
+            "first_name": "Megan",
+            "last_name": "Chang",
+            "dob": {
+                "$date": "1991-07-07T00:00:00Z"
+            },
+            "gender": "Female"
+        },
+        "total_visits": 10,
+        "visit_history": [
+            {
+                "_id": {
+                    "$oid": "6996a0bb9d664b27a141aebc"
+                },
+                "visit_id": 0,
+                "patient_id": 1,
+                "provider_id": 21,
+                "visit_date": {
+                    "$date": "2024-03-26T00:00:00Z"
+                },
+                "symptoms": [],
+                "diagnoses": [],
+                "procedures": [],
+                "labs": [],
+                "patient_ref": {
+                    "$oid": "699690a19d664b27a141ad26"
+                },
+                "provider_ref": {
+                    "$oid": "6996914f9d664b27a141ad6c"
+                }
+            },
+            {
+                "_id": {
+                    "$oid": "6996a0be9d664b27a141aebd"
+                },
+                "visit_id": 1,
+                "patient_id": 1,
+                "provider_id": 6,
+                "visit_date": {
+                    "$date": "2024-03-27T00:00:00Z"
+                },
+                "symptoms": [
+                    "Sudden weakness on one side of the body"
+                ],
+                "diagnoses": [
+                    {
+                        "name": "Psoriasis vulgaris",
+                        "icd10_code": "L40.0"
+                    },
+                    {
+                        "name": "Migraine, unspecified, not intractable, without status migrainosus",
+                        "icd10_code": "G43.909"
+                    },
+                    {
+                        "name": "Acute upper respiratory infection, unspecified",
+                        "icd10_code": "J06.9"
+                    },
+                    {
+                        "name": "Pain in right knee",
+                        "icd10_code": "M25.561"
+                    },
+                    {
+                        "name": "Presbyopia",
+                        "icd10_code": "H52.4"
+                    },
+                    {
+                        "name": "Cellulitis of left lower limb",
+                        "icd10_code": "L03.116"
+                    }
+                ],
+                "procedures": [
+                    {
+                        "proc_name": "Transfusion of Nonautologous Red Blood Cells into Peripheral Vein",
+                        "description": "Administration of donor red blood cells into peripheral vein."
+                    },
+                    {
+                        "proc_name": "Excision of Appendix, Via Natural or Artificial Opening Endoscopic",
+                        "description": "Partial removal of the appendix using endoscopic approach."
+                    },
+                    {
+                        "proc_name": "Repair Large Intestine, Open Approach",
+                        "description": "Surgical repair of large intestine using open approach."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Femur",
+                        "description": "Surgical placement of fixation device in the left thigh bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Endotracheal Airway into Trachea, Via Natural Opening",
+                        "description": "Placing a tube into the trachea to maintain an open airway."
+                    },
+                    {
+                        "proc_name": "Removal of Drainage Device from Trunk Subcutaneous Tissue",
+                        "description": "Surgical removal of previously inserted drainage device."
+                    },
+                    {
+                        "proc_name": "Repair Right Lower Leg Muscle, Open Approach",
+                        "description": "Surgical repair of muscle in right lower leg using open surgery."
+                    },
+                    {
+                        "proc_name": "Resection of Uterus, Open Approach",
+                        "description": "Complete surgical removal of the uterus."
+                    },
+                    {
+                        "proc_name": "Drainage of Left Lower Arm Subcutaneous Tissue, Percutaneous",
+                        "description": "Removal of fluid from left arm tissue via needle aspiration."
+                    },
+                    {
+                        "proc_name": "Resection of Liver, Percutaneous Endoscopic Approach",
+                        "description": "Complete removal of the liver lobe via percutaneous endoscopic method."
+                    },
+                    {
+                        "proc_name": "Bypass Stomach to Ileum, Open Approach",
+                        "description": "Creating a new connection from the stomach to the ileum through open surgery."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Tibia",
+                        "description": "Surgical placement of fixation device in the left shin bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Intraluminal Device into Right Internal Jugular Vein",
+                        "description": "Placing a catheter or similar device into the jugular vein."
+                    },
+                    {
+                        "proc_name": "Insertion of Cardiac Lead into Chest Subcutaneous Tissue",
+                        "description": "Placement of an electrical lead under the skin in the chest."
+                    },
+                    {
+                        "proc_name": "Insertion of Pacemaker, Dual Chamber into Chest Subcutaneous Tissue",
+                        "description": "Surgical insertion of a dual-chamber pacemaker under the chest skin."
+                    },
+                    {
+                        "proc_name": "Resection of Thyroid Gland, Open Approach",
+                        "description": "Complete surgical removal of the thyroid gland."
+                    },
+                    {
+                        "proc_name": "Destruction of Bladder, Via Natural or Artificial Opening",
+                        "description": "Destruction of bladder tissue using endoscopic tools."
+                    },
+                    {
+                        "proc_name": "Excision of Gallbladder, Percutaneous Approach, Diagnostic",
+                        "description": "Minimally invasive gallbladder biopsy."
+                    },
+                    {
+                        "proc_name": "Excision of Bladder, Via Natural or Artificial Opening",
+                        "description": "Partial removal of the bladder via an internal orifice."
+                    },
+                    {
+                        "proc_name": "Resection of Stomach, Open Approach",
+                        "description": "Complete removal of the stomach via open surgery."
+                    }
+                ],
+                "labs": [
+                    {
+                        "lab_name": "Urea nitrogen; quantitative",
+                        "cpt_code": "84550"
+                    }
+                ],
+                "patient_ref": {
+                    "$oid": "699690a19d664b27a141ad26"
+                },
+                "provider_ref": {
+                    "$oid": "6996914f9d664b27a141ad5d"
+                }
+            },
+            {
+                "_id": {
+                    "$oid": "6996a0be9d664b27a141aebe"
+                },
+                "visit_id": 2,
+                "patient_id": 1,
+                "provider_id": 31,
+                "visit_date": {
+                    "$date": "2024-04-09T00:00:00Z"
+                },
+                "symptoms": [
+                    "Sudden onset of chest pain and dizziness",
+                    "Dry, scaly patches on the skin",
+                    "Fatigue and low energy levels throughout the day",
+                    "Tingling and numbness in fingers and toes"
+                ],
+                "diagnoses": [
+                    {
+                        "name": "Noninfective gastroenteritis and colitis, unspecified",
+                        "icd10_code": "K52.9"
+                    },
+                    {
+                        "name": "Psoriasis vulgaris",
+                        "icd10_code": "L40.0"
+                    },
+                    {
+                        "name": "Pain in right knee",
+                        "icd10_code": "M25.561"
+                    },
+                    {
+                        "name": "Cellulitis of left lower limb",
+                        "icd10_code": "L03.116"
+                    },
+                    {
+                        "name": "Viral infection, unspecified",
+                        "icd10_code": "B34.9"
+                    },
+                    {
+                        "name": "Myalgia",
+                        "icd10_code": "M79.1"
+                    },
+                    {
+                        "name": "Generalized anxiety disorder",
+                        "icd10_code": "F41.1"
+                    },
+                    {
+                        "name": "Urinary tract infection, site not specified",
+                        "icd10_code": "N39.0"
+                    }
+                ],
+                "procedures": [
+                    {
+                        "proc_name": "Transfusion of Nonautologous Red Blood Cells into Peripheral Vein",
+                        "description": "Administration of donor red blood cells into peripheral vein."
+                    },
+                    {
+                        "proc_name": "Excision of Appendix, Via Natural or Artificial Opening Endoscopic",
+                        "description": "Partial removal of the appendix using endoscopic approach."
+                    },
+                    {
+                        "proc_name": "Repair Large Intestine, Open Approach",
+                        "description": "Surgical repair of large intestine using open approach."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Femur",
+                        "description": "Surgical placement of fixation device in the left thigh bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Endotracheal Airway into Trachea, Via Natural Opening",
+                        "description": "Placing a tube into the trachea to maintain an open airway."
+                    },
+                    {
+                        "proc_name": "Removal of Drainage Device from Trunk Subcutaneous Tissue",
+                        "description": "Surgical removal of previously inserted drainage device."
+                    },
+                    {
+                        "proc_name": "Repair Right Lower Leg Muscle, Open Approach",
+                        "description": "Surgical repair of muscle in right lower leg using open surgery."
+                    },
+                    {
+                        "proc_name": "Resection of Uterus, Open Approach",
+                        "description": "Complete surgical removal of the uterus."
+                    },
+                    {
+                        "proc_name": "Drainage of Left Lower Arm Subcutaneous Tissue, Percutaneous",
+                        "description": "Removal of fluid from left arm tissue via needle aspiration."
+                    },
+                    {
+                        "proc_name": "Resection of Liver, Percutaneous Endoscopic Approach",
+                        "description": "Complete removal of the liver lobe via percutaneous endoscopic method."
+                    },
+                    {
+                        "proc_name": "Bypass Stomach to Ileum, Open Approach",
+                        "description": "Creating a new connection from the stomach to the ileum through open surgery."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Tibia",
+                        "description": "Surgical placement of fixation device in the left shin bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Intraluminal Device into Right Internal Jugular Vein",
+                        "description": "Placing a catheter or similar device into the jugular vein."
+                    },
+                    {
+                        "proc_name": "Insertion of Cardiac Lead into Chest Subcutaneous Tissue",
+                        "description": "Placement of an electrical lead under the skin in the chest."
+                    },
+                    {
+                        "proc_name": "Insertion of Pacemaker, Dual Chamber into Chest Subcutaneous Tissue",
+                        "description": "Surgical insertion of a dual-chamber pacemaker under the chest skin."
+                    },
+                    {
+                        "proc_name": "Resection of Thyroid Gland, Open Approach",
+                        "description": "Complete surgical removal of the thyroid gland."
+                    },
+                    {
+                        "proc_name": "Destruction of Bladder, Via Natural or Artificial Opening",
+                        "description": "Destruction of bladder tissue using endoscopic tools."
+                    },
+                    {
+                        "proc_name": "Excision of Gallbladder, Percutaneous Approach, Diagnostic",
+                        "description": "Minimally invasive gallbladder biopsy."
+                    },
+                    {
+                        "proc_name": "Excision of Bladder, Via Natural or Artificial Opening",
+                        "description": "Partial removal of the bladder via an internal orifice."
+                    },
+                    {
+                        "proc_name": "Resection of Stomach, Open Approach",
+                        "description": "Complete removal of the stomach via open surgery."
+                    }
+                ],
+                "labs": [
+                    {
+                        "lab_name": "Bilirubin; total",
+                        "cpt_code": "82247"
+                    }
+                ],
+                "patient_ref": {
+                    "$oid": "699690a19d664b27a141ad26"
+                },
+                "provider_ref": {
+                    "$oid": "6996914f9d664b27a141ad76"
+                }
+            },
+            {
+                "_id": {
+                    "$oid": "6996a0be9d664b27a141aebf"
+                },
+                "visit_id": 3,
+                "patient_id": 1,
+                "provider_id": 23,
+                "visit_date": {
+                    "$date": "2023-04-22T00:00:00Z"
+                },
+                "symptoms": [
+                    "Dry, scaly patches on the skin",
+                    "Intermittent fever and chills",
+                    "Loss of balance and coordination",
+                    "Sudden weakness on one side of the body",
+                    "Pain and swelling in the joints",
+                    "Frequent gas and bloating"
+                ],
+                "diagnoses": [
+                    {
+                        "name": "Major depressive disorder, recurrent, moderate",
+                        "icd10_code": "F33.1"
+                    },
+                    {
+                        "name": "Myalgia",
+                        "icd10_code": "M79.1"
+                    }
+                ],
+                "procedures": [
+                    {
+                        "proc_name": "Transfusion of Nonautologous Red Blood Cells into Peripheral Vein",
+                        "description": "Administration of donor red blood cells into peripheral vein."
+                    },
+                    {
+                        "proc_name": "Excision of Appendix, Via Natural or Artificial Opening Endoscopic",
+                        "description": "Partial removal of the appendix using endoscopic approach."
+                    },
+                    {
+                        "proc_name": "Repair Large Intestine, Open Approach",
+                        "description": "Surgical repair of large intestine using open approach."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Femur",
+                        "description": "Surgical placement of fixation device in the left thigh bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Endotracheal Airway into Trachea, Via Natural Opening",
+                        "description": "Placing a tube into the trachea to maintain an open airway."
+                    },
+                    {
+                        "proc_name": "Removal of Drainage Device from Trunk Subcutaneous Tissue",
+                        "description": "Surgical removal of previously inserted drainage device."
+                    },
+                    {
+                        "proc_name": "Repair Right Lower Leg Muscle, Open Approach",
+                        "description": "Surgical repair of muscle in right lower leg using open surgery."
+                    },
+                    {
+                        "proc_name": "Resection of Uterus, Open Approach",
+                        "description": "Complete surgical removal of the uterus."
+                    },
+                    {
+                        "proc_name": "Drainage of Left Lower Arm Subcutaneous Tissue, Percutaneous",
+                        "description": "Removal of fluid from left arm tissue via needle aspiration."
+                    },
+                    {
+                        "proc_name": "Resection of Liver, Percutaneous Endoscopic Approach",
+                        "description": "Complete removal of the liver lobe via percutaneous endoscopic method."
+                    },
+                    {
+                        "proc_name": "Bypass Stomach to Ileum, Open Approach",
+                        "description": "Creating a new connection from the stomach to the ileum through open surgery."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Tibia",
+                        "description": "Surgical placement of fixation device in the left shin bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Intraluminal Device into Right Internal Jugular Vein",
+                        "description": "Placing a catheter or similar device into the jugular vein."
+                    },
+                    {
+                        "proc_name": "Insertion of Cardiac Lead into Chest Subcutaneous Tissue",
+                        "description": "Placement of an electrical lead under the skin in the chest."
+                    },
+                    {
+                        "proc_name": "Insertion of Pacemaker, Dual Chamber into Chest Subcutaneous Tissue",
+                        "description": "Surgical insertion of a dual-chamber pacemaker under the chest skin."
+                    },
+                    {
+                        "proc_name": "Resection of Thyroid Gland, Open Approach",
+                        "description": "Complete surgical removal of the thyroid gland."
+                    },
+                    {
+                        "proc_name": "Destruction of Bladder, Via Natural or Artificial Opening",
+                        "description": "Destruction of bladder tissue using endoscopic tools."
+                    },
+                    {
+                        "proc_name": "Excision of Gallbladder, Percutaneous Approach, Diagnostic",
+                        "description": "Minimally invasive gallbladder biopsy."
+                    },
+                    {
+                        "proc_name": "Excision of Bladder, Via Natural or Artificial Opening",
+                        "description": "Partial removal of the bladder via an internal orifice."
+                    },
+                    {
+                        "proc_name": "Resection of Stomach, Open Approach",
+                        "description": "Complete removal of the stomach via open surgery."
+                    }
+                ],
+                "labs": [
+                    {
+                        "lab_name": "Vitamin D; 25 hydroxy",
+                        "cpt_code": "82306"
+                    },
+                    {
+                        "lab_name": "Urinalysis, automated, with microscopy",
+                        "cpt_code": "81001"
+                    },
+                    {
+                        "lab_name": "Phosphatase, alkaline",
+                        "cpt_code": "84075"
+                    },
+                    {
+                        "lab_name": "Natriuretic peptide",
+                        "cpt_code": "83880"
+                    },
+                    {
+                        "lab_name": "Urinalysis, non-automated, without microscopy",
+                        "cpt_code": "81002"
+                    },
+                    {
+                        "lab_name": "Ferritin",
+                        "cpt_code": "82728"
+                    },
+                    {
+                        "lab_name": "Magnesium",
+                        "cpt_code": "83735"
+                    }
+                ],
+                "patient_ref": {
+                    "$oid": "699690a19d664b27a141ad26"
+                },
+                "provider_ref": {
+                    "$oid": "6996914f9d664b27a141ad6e"
+                }
+            },
+            {
+                "_id": {
+                    "$oid": "6996a0be9d664b27a141aec0"
+                },
+                "visit_id": 4,
+                "patient_id": 1,
+                "provider_id": 23,
+                "visit_date": {
+                    "$date": "2023-09-19T00:00:00Z"
+                },
+                "symptoms": [
+                    "Dry, scaly patches on the skin",
+                    "Tingling and numbness in fingers and toes",
+                    "Fatigue and low energy levels throughout the day",
+                    "Nausea and abdominal cramping after eating",
+                    "Persistent runny nose and sneezing",
+                    "Sudden onset of chest pain and dizziness"
+                ],
+                "diagnoses": [
+                    {
+                        "name": "Acute upper respiratory infection, unspecified",
+                        "icd10_code": "J06.9"
+                    },
+                    {
+                        "name": "Myalgia",
+                        "icd10_code": "M79.1"
+                    }
+                ],
+                "procedures": [
+                    {
+                        "proc_name": "Transfusion of Nonautologous Red Blood Cells into Peripheral Vein",
+                        "description": "Administration of donor red blood cells into peripheral vein."
+                    },
+                    {
+                        "proc_name": "Excision of Appendix, Via Natural or Artificial Opening Endoscopic",
+                        "description": "Partial removal of the appendix using endoscopic approach."
+                    },
+                    {
+                        "proc_name": "Repair Large Intestine, Open Approach",
+                        "description": "Surgical repair of large intestine using open approach."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Femur",
+                        "description": "Surgical placement of fixation device in the left thigh bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Endotracheal Airway into Trachea, Via Natural Opening",
+                        "description": "Placing a tube into the trachea to maintain an open airway."
+                    },
+                    {
+                        "proc_name": "Removal of Drainage Device from Trunk Subcutaneous Tissue",
+                        "description": "Surgical removal of previously inserted drainage device."
+                    },
+                    {
+                        "proc_name": "Repair Right Lower Leg Muscle, Open Approach",
+                        "description": "Surgical repair of muscle in right lower leg using open surgery."
+                    },
+                    {
+                        "proc_name": "Resection of Uterus, Open Approach",
+                        "description": "Complete surgical removal of the uterus."
+                    },
+                    {
+                        "proc_name": "Drainage of Left Lower Arm Subcutaneous Tissue, Percutaneous",
+                        "description": "Removal of fluid from left arm tissue via needle aspiration."
+                    },
+                    {
+                        "proc_name": "Resection of Liver, Percutaneous Endoscopic Approach",
+                        "description": "Complete removal of the liver lobe via percutaneous endoscopic method."
+                    },
+                    {
+                        "proc_name": "Bypass Stomach to Ileum, Open Approach",
+                        "description": "Creating a new connection from the stomach to the ileum through open surgery."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Tibia",
+                        "description": "Surgical placement of fixation device in the left shin bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Intraluminal Device into Right Internal Jugular Vein",
+                        "description": "Placing a catheter or similar device into the jugular vein."
+                    },
+                    {
+                        "proc_name": "Insertion of Cardiac Lead into Chest Subcutaneous Tissue",
+                        "description": "Placement of an electrical lead under the skin in the chest."
+                    },
+                    {
+                        "proc_name": "Insertion of Pacemaker, Dual Chamber into Chest Subcutaneous Tissue",
+                        "description": "Surgical insertion of a dual-chamber pacemaker under the chest skin."
+                    },
+                    {
+                        "proc_name": "Resection of Thyroid Gland, Open Approach",
+                        "description": "Complete surgical removal of the thyroid gland."
+                    },
+                    {
+                        "proc_name": "Destruction of Bladder, Via Natural or Artificial Opening",
+                        "description": "Destruction of bladder tissue using endoscopic tools."
+                    },
+                    {
+                        "proc_name": "Excision of Gallbladder, Percutaneous Approach, Diagnostic",
+                        "description": "Minimally invasive gallbladder biopsy."
+                    },
+                    {
+                        "proc_name": "Excision of Bladder, Via Natural or Artificial Opening",
+                        "description": "Partial removal of the bladder via an internal orifice."
+                    },
+                    {
+                        "proc_name": "Resection of Stomach, Open Approach",
+                        "description": "Complete removal of the stomach via open surgery."
+                    }
+                ],
+                "labs": [
+                    {
+                        "lab_name": "Vitamin D; 25 hydroxy",
+                        "cpt_code": "82306"
+                    }
+                ],
+                "patient_ref": {
+                    "$oid": "699690a19d664b27a141ad26"
+                },
+                "provider_ref": {
+                    "$oid": "6996914f9d664b27a141ad6e"
+                }
+            },
+            {
+                "_id": {
+                    "$oid": "6996a0be9d664b27a141aec1"
+                },
+                "visit_id": 5,
+                "patient_id": 1,
+                "provider_id": 31,
+                "visit_date": {
+                    "$date": "2024-07-09T00:00:00Z"
+                },
+                "symptoms": [
+                    "Frequent headaches accompanied by nausea",
+                    "Sudden onset of chest pain and dizziness",
+                    "Loss of appetite and unintended weight loss",
+                    "Dry mouth and sore throat",
+                    "Sharp pain in the lower back when bending"
+                ],
+                "diagnoses": [
+                    {
+                        "name": "Chest pain, unspecified",
+                        "icd10_code": "R07.9"
+                    },
+                    {
+                        "name": "Hyperlipidemia, unspecified",
+                        "icd10_code": "E78.5"
+                    },
+                    {
+                        "name": "Low back pain",
+                        "icd10_code": "M54.5"
+                    }
+                ],
+                "procedures": [
+                    {
+                        "proc_name": "Transfusion of Nonautologous Red Blood Cells into Peripheral Vein",
+                        "description": "Administration of donor red blood cells into peripheral vein."
+                    },
+                    {
+                        "proc_name": "Excision of Appendix, Via Natural or Artificial Opening Endoscopic",
+                        "description": "Partial removal of the appendix using endoscopic approach."
+                    },
+                    {
+                        "proc_name": "Repair Large Intestine, Open Approach",
+                        "description": "Surgical repair of large intestine using open approach."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Femur",
+                        "description": "Surgical placement of fixation device in the left thigh bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Endotracheal Airway into Trachea, Via Natural Opening",
+                        "description": "Placing a tube into the trachea to maintain an open airway."
+                    },
+                    {
+                        "proc_name": "Removal of Drainage Device from Trunk Subcutaneous Tissue",
+                        "description": "Surgical removal of previously inserted drainage device."
+                    },
+                    {
+                        "proc_name": "Repair Right Lower Leg Muscle, Open Approach",
+                        "description": "Surgical repair of muscle in right lower leg using open surgery."
+                    },
+                    {
+                        "proc_name": "Resection of Uterus, Open Approach",
+                        "description": "Complete surgical removal of the uterus."
+                    },
+                    {
+                        "proc_name": "Drainage of Left Lower Arm Subcutaneous Tissue, Percutaneous",
+                        "description": "Removal of fluid from left arm tissue via needle aspiration."
+                    },
+                    {
+                        "proc_name": "Resection of Liver, Percutaneous Endoscopic Approach",
+                        "description": "Complete removal of the liver lobe via percutaneous endoscopic method."
+                    },
+                    {
+                        "proc_name": "Bypass Stomach to Ileum, Open Approach",
+                        "description": "Creating a new connection from the stomach to the ileum through open surgery."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Tibia",
+                        "description": "Surgical placement of fixation device in the left shin bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Intraluminal Device into Right Internal Jugular Vein",
+                        "description": "Placing a catheter or similar device into the jugular vein."
+                    },
+                    {
+                        "proc_name": "Insertion of Cardiac Lead into Chest Subcutaneous Tissue",
+                        "description": "Placement of an electrical lead under the skin in the chest."
+                    },
+                    {
+                        "proc_name": "Insertion of Pacemaker, Dual Chamber into Chest Subcutaneous Tissue",
+                        "description": "Surgical insertion of a dual-chamber pacemaker under the chest skin."
+                    },
+                    {
+                        "proc_name": "Resection of Thyroid Gland, Open Approach",
+                        "description": "Complete surgical removal of the thyroid gland."
+                    },
+                    {
+                        "proc_name": "Destruction of Bladder, Via Natural or Artificial Opening",
+                        "description": "Destruction of bladder tissue using endoscopic tools."
+                    },
+                    {
+                        "proc_name": "Excision of Gallbladder, Percutaneous Approach, Diagnostic",
+                        "description": "Minimally invasive gallbladder biopsy."
+                    },
+                    {
+                        "proc_name": "Excision of Bladder, Via Natural or Artificial Opening",
+                        "description": "Partial removal of the bladder via an internal orifice."
+                    },
+                    {
+                        "proc_name": "Resection of Stomach, Open Approach",
+                        "description": "Complete removal of the stomach via open surgery."
+                    }
+                ],
+                "labs": [
+                    {
+                        "lab_name": "Vitamin D; 25 hydroxy",
+                        "cpt_code": "82306"
+                    },
+                    {
+                        "lab_name": "Prostate specific antigen (PSA); total",
+                        "cpt_code": "84153"
+                    },
+                    {
+                        "lab_name": "Albumin; serum",
+                        "cpt_code": "82040"
+                    }
+                ],
+                "patient_ref": {
+                    "$oid": "699690a19d664b27a141ad26"
+                },
+                "provider_ref": {
+                    "$oid": "6996914f9d664b27a141ad76"
+                }
+            },
+            {
+                "_id": {
+                    "$oid": "6996a0bf9d664b27a141aec2"
+                },
+                "visit_id": 6,
+                "patient_id": 1,
+                "provider_id": 21,
+                "visit_date": {
+                    "$date": "2024-01-09T00:00:00Z"
+                },
+                "symptoms": [
+                    "Swelling and redness around a wound",
+                    "Sudden onset of chest pain and dizziness"
+                ],
+                "diagnoses": [
+                    {
+                        "name": "Chest pain, unspecified",
+                        "icd10_code": "R07.9"
+                    },
+                    {
+                        "name": "Low back pain",
+                        "icd10_code": "M54.5"
+                    },
+                    {
+                        "name": "Unspecified asthma, uncomplicated",
+                        "icd10_code": "J45.909"
+                    },
+                    {
+                        "name": "Essential (primary) hypertension",
+                        "icd10_code": "I10"
+                    },
+                    {
+                        "name": "Generalized anxiety disorder",
+                        "icd10_code": "F41.1"
+                    },
+                    {
+                        "name": "Acute upper respiratory infection, unspecified",
+                        "icd10_code": "J06.9"
+                    }
+                ],
+                "procedures": [
+                    {
+                        "proc_name": "Transfusion of Nonautologous Red Blood Cells into Peripheral Vein",
+                        "description": "Administration of donor red blood cells into peripheral vein."
+                    },
+                    {
+                        "proc_name": "Excision of Appendix, Via Natural or Artificial Opening Endoscopic",
+                        "description": "Partial removal of the appendix using endoscopic approach."
+                    },
+                    {
+                        "proc_name": "Repair Large Intestine, Open Approach",
+                        "description": "Surgical repair of large intestine using open approach."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Femur",
+                        "description": "Surgical placement of fixation device in the left thigh bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Endotracheal Airway into Trachea, Via Natural Opening",
+                        "description": "Placing a tube into the trachea to maintain an open airway."
+                    },
+                    {
+                        "proc_name": "Removal of Drainage Device from Trunk Subcutaneous Tissue",
+                        "description": "Surgical removal of previously inserted drainage device."
+                    },
+                    {
+                        "proc_name": "Repair Right Lower Leg Muscle, Open Approach",
+                        "description": "Surgical repair of muscle in right lower leg using open surgery."
+                    },
+                    {
+                        "proc_name": "Resection of Uterus, Open Approach",
+                        "description": "Complete surgical removal of the uterus."
+                    },
+                    {
+                        "proc_name": "Drainage of Left Lower Arm Subcutaneous Tissue, Percutaneous",
+                        "description": "Removal of fluid from left arm tissue via needle aspiration."
+                    },
+                    {
+                        "proc_name": "Resection of Liver, Percutaneous Endoscopic Approach",
+                        "description": "Complete removal of the liver lobe via percutaneous endoscopic method."
+                    },
+                    {
+                        "proc_name": "Bypass Stomach to Ileum, Open Approach",
+                        "description": "Creating a new connection from the stomach to the ileum through open surgery."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Tibia",
+                        "description": "Surgical placement of fixation device in the left shin bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Intraluminal Device into Right Internal Jugular Vein",
+                        "description": "Placing a catheter or similar device into the jugular vein."
+                    },
+                    {
+                        "proc_name": "Insertion of Cardiac Lead into Chest Subcutaneous Tissue",
+                        "description": "Placement of an electrical lead under the skin in the chest."
+                    },
+                    {
+                        "proc_name": "Insertion of Pacemaker, Dual Chamber into Chest Subcutaneous Tissue",
+                        "description": "Surgical insertion of a dual-chamber pacemaker under the chest skin."
+                    },
+                    {
+                        "proc_name": "Resection of Thyroid Gland, Open Approach",
+                        "description": "Complete surgical removal of the thyroid gland."
+                    },
+                    {
+                        "proc_name": "Destruction of Bladder, Via Natural or Artificial Opening",
+                        "description": "Destruction of bladder tissue using endoscopic tools."
+                    },
+                    {
+                        "proc_name": "Excision of Gallbladder, Percutaneous Approach, Diagnostic",
+                        "description": "Minimally invasive gallbladder biopsy."
+                    },
+                    {
+                        "proc_name": "Excision of Bladder, Via Natural or Artificial Opening",
+                        "description": "Partial removal of the bladder via an internal orifice."
+                    },
+                    {
+                        "proc_name": "Resection of Stomach, Open Approach",
+                        "description": "Complete removal of the stomach via open surgery."
+                    }
+                ],
+                "labs": [
+                    {
+                        "lab_name": "Lactic acid",
+                        "cpt_code": "83615"
+                    },
+                    {
+                        "lab_name": "Iron; serum",
+                        "cpt_code": "83540"
+                    },
+                    {
+                        "lab_name": "Cobalamin (Vitamin B-12)",
+                        "cpt_code": "82607"
+                    },
+                    {
+                        "lab_name": "Natriuretic peptide",
+                        "cpt_code": "83880"
+                    },
+                    {
+                        "lab_name": "Urinalysis, non-automated, without microscopy",
+                        "cpt_code": "81002"
+                    },
+                    {
+                        "lab_name": "Albumin; serum",
+                        "cpt_code": "82040"
+                    },
+                    {
+                        "lab_name": "Ferritin",
+                        "cpt_code": "82728"
+                    },
+                    {
+                        "lab_name": "Prostate specific antigen (PSA); total",
+                        "cpt_code": "84153"
+                    }
+                ],
+                "patient_ref": {
+                    "$oid": "699690a19d664b27a141ad26"
+                },
+                "provider_ref": {
+                    "$oid": "6996914f9d664b27a141ad6c"
+                }
+            },
+            {
+                "_id": {
+                    "$oid": "6996a0bf9d664b27a141aec3"
+                },
+                "visit_id": 7,
+                "patient_id": 1,
+                "provider_id": 2,
+                "visit_date": {
+                    "$date": "2023-10-01T00:00:00Z"
+                },
+                "symptoms": [
+                    "Swelling and redness around a wound",
+                    "Difficulty swallowing solid foods",
+                    "Fatigue and low energy levels throughout the day",
+                    "Sensitivity to cold and pale fingers",
+                    "Intermittent fever and chills"
+                ],
+                "diagnoses": [
+                    {
+                        "name": "Major depressive disorder, recurrent, moderate",
+                        "icd10_code": "F33.1"
+                    },
+                    {
+                        "name": "Headache",
+                        "icd10_code": "R51"
+                    },
+                    {
+                        "name": "Urinary tract infection, site not specified",
+                        "icd10_code": "N39.0"
+                    }
+                ],
+                "procedures": [
+                    {
+                        "proc_name": "Transfusion of Nonautologous Red Blood Cells into Peripheral Vein",
+                        "description": "Administration of donor red blood cells into peripheral vein."
+                    },
+                    {
+                        "proc_name": "Excision of Appendix, Via Natural or Artificial Opening Endoscopic",
+                        "description": "Partial removal of the appendix using endoscopic approach."
+                    },
+                    {
+                        "proc_name": "Repair Large Intestine, Open Approach",
+                        "description": "Surgical repair of large intestine using open approach."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Femur",
+                        "description": "Surgical placement of fixation device in the left thigh bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Endotracheal Airway into Trachea, Via Natural Opening",
+                        "description": "Placing a tube into the trachea to maintain an open airway."
+                    },
+                    {
+                        "proc_name": "Removal of Drainage Device from Trunk Subcutaneous Tissue",
+                        "description": "Surgical removal of previously inserted drainage device."
+                    },
+                    {
+                        "proc_name": "Repair Right Lower Leg Muscle, Open Approach",
+                        "description": "Surgical repair of muscle in right lower leg using open surgery."
+                    },
+                    {
+                        "proc_name": "Resection of Uterus, Open Approach",
+                        "description": "Complete surgical removal of the uterus."
+                    },
+                    {
+                        "proc_name": "Drainage of Left Lower Arm Subcutaneous Tissue, Percutaneous",
+                        "description": "Removal of fluid from left arm tissue via needle aspiration."
+                    },
+                    {
+                        "proc_name": "Resection of Liver, Percutaneous Endoscopic Approach",
+                        "description": "Complete removal of the liver lobe via percutaneous endoscopic method."
+                    },
+                    {
+                        "proc_name": "Bypass Stomach to Ileum, Open Approach",
+                        "description": "Creating a new connection from the stomach to the ileum through open surgery."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Tibia",
+                        "description": "Surgical placement of fixation device in the left shin bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Intraluminal Device into Right Internal Jugular Vein",
+                        "description": "Placing a catheter or similar device into the jugular vein."
+                    },
+                    {
+                        "proc_name": "Insertion of Cardiac Lead into Chest Subcutaneous Tissue",
+                        "description": "Placement of an electrical lead under the skin in the chest."
+                    },
+                    {
+                        "proc_name": "Insertion of Pacemaker, Dual Chamber into Chest Subcutaneous Tissue",
+                        "description": "Surgical insertion of a dual-chamber pacemaker under the chest skin."
+                    },
+                    {
+                        "proc_name": "Resection of Thyroid Gland, Open Approach",
+                        "description": "Complete surgical removal of the thyroid gland."
+                    },
+                    {
+                        "proc_name": "Destruction of Bladder, Via Natural or Artificial Opening",
+                        "description": "Destruction of bladder tissue using endoscopic tools."
+                    },
+                    {
+                        "proc_name": "Excision of Gallbladder, Percutaneous Approach, Diagnostic",
+                        "description": "Minimally invasive gallbladder biopsy."
+                    },
+                    {
+                        "proc_name": "Excision of Bladder, Via Natural or Artificial Opening",
+                        "description": "Partial removal of the bladder via an internal orifice."
+                    },
+                    {
+                        "proc_name": "Resection of Stomach, Open Approach",
+                        "description": "Complete removal of the stomach via open surgery."
+                    }
+                ],
+                "labs": [
+                    {
+                        "lab_name": "Comprehensive metabolic panel",
+                        "cpt_code": "80053"
+                    },
+                    {
+                        "lab_name": "Natriuretic peptide",
+                        "cpt_code": "83880"
+                    }
+                ],
+                "patient_ref": {
+                    "$oid": "699690a19d664b27a141ad26"
+                },
+                "provider_ref": {
+                    "$oid": "6996914f9d664b27a141ad59"
+                }
+            },
+            {
+                "_id": {
+                    "$oid": "6996a0c09d664b27a141aec4"
+                },
+                "visit_id": 8,
+                "patient_id": 1,
+                "provider_id": 2,
+                "visit_date": {
+                    "$date": "2025-03-06T00:00:00Z"
+                },
+                "symptoms": [
+                    "Swelling and redness around a wound"
+                ],
+                "diagnoses": [
+                    {
+                        "name": "Acute upper respiratory infection, unspecified",
+                        "icd10_code": "J06.9"
+                    },
+                    {
+                        "name": "Headache",
+                        "icd10_code": "R51"
+                    },
+                    {
+                        "name": "Viral infection, unspecified",
+                        "icd10_code": "B34.9"
+                    },
+                    {
+                        "name": "Presbyopia",
+                        "icd10_code": "H52.4"
+                    },
+                    {
+                        "name": "Psoriasis vulgaris",
+                        "icd10_code": "L40.0"
+                    },
+                    {
+                        "name": "Major depressive disorder, recurrent, moderate",
+                        "icd10_code": "F33.1"
+                    },
+                    {
+                        "name": "Myalgia",
+                        "icd10_code": "M79.1"
+                    }
+                ],
+                "procedures": [
+                    {
+                        "proc_name": "Transfusion of Nonautologous Red Blood Cells into Peripheral Vein",
+                        "description": "Administration of donor red blood cells into peripheral vein."
+                    },
+                    {
+                        "proc_name": "Excision of Appendix, Via Natural or Artificial Opening Endoscopic",
+                        "description": "Partial removal of the appendix using endoscopic approach."
+                    },
+                    {
+                        "proc_name": "Repair Large Intestine, Open Approach",
+                        "description": "Surgical repair of large intestine using open approach."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Femur",
+                        "description": "Surgical placement of fixation device in the left thigh bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Endotracheal Airway into Trachea, Via Natural Opening",
+                        "description": "Placing a tube into the trachea to maintain an open airway."
+                    },
+                    {
+                        "proc_name": "Removal of Drainage Device from Trunk Subcutaneous Tissue",
+                        "description": "Surgical removal of previously inserted drainage device."
+                    },
+                    {
+                        "proc_name": "Repair Right Lower Leg Muscle, Open Approach",
+                        "description": "Surgical repair of muscle in right lower leg using open surgery."
+                    },
+                    {
+                        "proc_name": "Resection of Uterus, Open Approach",
+                        "description": "Complete surgical removal of the uterus."
+                    },
+                    {
+                        "proc_name": "Drainage of Left Lower Arm Subcutaneous Tissue, Percutaneous",
+                        "description": "Removal of fluid from left arm tissue via needle aspiration."
+                    },
+                    {
+                        "proc_name": "Resection of Liver, Percutaneous Endoscopic Approach",
+                        "description": "Complete removal of the liver lobe via percutaneous endoscopic method."
+                    },
+                    {
+                        "proc_name": "Bypass Stomach to Ileum, Open Approach",
+                        "description": "Creating a new connection from the stomach to the ileum through open surgery."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Tibia",
+                        "description": "Surgical placement of fixation device in the left shin bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Intraluminal Device into Right Internal Jugular Vein",
+                        "description": "Placing a catheter or similar device into the jugular vein."
+                    },
+                    {
+                        "proc_name": "Insertion of Cardiac Lead into Chest Subcutaneous Tissue",
+                        "description": "Placement of an electrical lead under the skin in the chest."
+                    },
+                    {
+                        "proc_name": "Insertion of Pacemaker, Dual Chamber into Chest Subcutaneous Tissue",
+                        "description": "Surgical insertion of a dual-chamber pacemaker under the chest skin."
+                    },
+                    {
+                        "proc_name": "Resection of Thyroid Gland, Open Approach",
+                        "description": "Complete surgical removal of the thyroid gland."
+                    },
+                    {
+                        "proc_name": "Destruction of Bladder, Via Natural or Artificial Opening",
+                        "description": "Destruction of bladder tissue using endoscopic tools."
+                    },
+                    {
+                        "proc_name": "Excision of Gallbladder, Percutaneous Approach, Diagnostic",
+                        "description": "Minimally invasive gallbladder biopsy."
+                    },
+                    {
+                        "proc_name": "Excision of Bladder, Via Natural or Artificial Opening",
+                        "description": "Partial removal of the bladder via an internal orifice."
+                    },
+                    {
+                        "proc_name": "Resection of Stomach, Open Approach",
+                        "description": "Complete removal of the stomach via open surgery."
+                    }
+                ],
+                "labs": [
+                    {
+                        "lab_name": "Bilirubin; total",
+                        "cpt_code": "82247"
+                    },
+                    {
+                        "lab_name": "Sodium; serum",
+                        "cpt_code": "84295"
+                    },
+                    {
+                        "lab_name": "Thyroid stimulating hormone (TSH)",
+                        "cpt_code": "84443"
+                    },
+                    {
+                        "lab_name": "Cobalamin (Vitamin B-12)",
+                        "cpt_code": "82607"
+                    },
+                    {
+                        "lab_name": "Natriuretic peptide",
+                        "cpt_code": "83880"
+                    }
+                ],
+                "patient_ref": {
+                    "$oid": "699690a19d664b27a141ad26"
+                },
+                "provider_ref": {
+                    "$oid": "6996914f9d664b27a141ad59"
+                }
+            },
+            {
+                "_id": {
+                    "$oid": "6996a0c09d664b27a141aec5"
+                },
+                "visit_id": 9,
+                "patient_id": 1,
+                "provider_id": 6,
+                "visit_date": {
+                    "$date": "2023-07-18T00:00:00Z"
+                },
+                "symptoms": [
+                    "Persistent cough and shortness of breath",
+                    "Nausea and abdominal cramping after eating",
+                    "Frequent headaches accompanied by nausea",
+                    "Intermittent fever and chills",
+                    "Severe headache with light sensitivity"
+                ],
+                "diagnoses": [
+                    {
+                        "name": "Presbyopia",
+                        "icd10_code": "H52.4"
+                    },
+                    {
+                        "name": "Low back pain",
+                        "icd10_code": "M54.5"
+                    },
+                    {
+                        "name": "Urinary tract infection, site not specified",
+                        "icd10_code": "N39.0"
+                    },
+                    {
+                        "name": "Generalized anxiety disorder",
+                        "icd10_code": "F41.1"
+                    },
+                    {
+                        "name": "Gastro-esophageal reflux disease without esophagitis",
+                        "icd10_code": "K21.9"
+                    },
+                    {
+                        "name": "Psoriasis vulgaris",
+                        "icd10_code": "L40.0"
+                    },
+                    {
+                        "name": "Hyperlipidemia, unspecified",
+                        "icd10_code": "E78.5"
+                    },
+                    {
+                        "name": "Major depressive disorder, recurrent, moderate",
+                        "icd10_code": "F33.1"
+                    },
+                    {
+                        "name": "Pain in right knee",
+                        "icd10_code": "M25.561"
+                    }
+                ],
+                "procedures": [
+                    {
+                        "proc_name": "Transfusion of Nonautologous Red Blood Cells into Peripheral Vein",
+                        "description": "Administration of donor red blood cells into peripheral vein."
+                    },
+                    {
+                        "proc_name": "Excision of Appendix, Via Natural or Artificial Opening Endoscopic",
+                        "description": "Partial removal of the appendix using endoscopic approach."
+                    },
+                    {
+                        "proc_name": "Repair Large Intestine, Open Approach",
+                        "description": "Surgical repair of large intestine using open approach."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Femur",
+                        "description": "Surgical placement of fixation device in the left thigh bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Endotracheal Airway into Trachea, Via Natural Opening",
+                        "description": "Placing a tube into the trachea to maintain an open airway."
+                    },
+                    {
+                        "proc_name": "Removal of Drainage Device from Trunk Subcutaneous Tissue",
+                        "description": "Surgical removal of previously inserted drainage device."
+                    },
+                    {
+                        "proc_name": "Repair Right Lower Leg Muscle, Open Approach",
+                        "description": "Surgical repair of muscle in right lower leg using open surgery."
+                    },
+                    {
+                        "proc_name": "Resection of Uterus, Open Approach",
+                        "description": "Complete surgical removal of the uterus."
+                    },
+                    {
+                        "proc_name": "Drainage of Left Lower Arm Subcutaneous Tissue, Percutaneous",
+                        "description": "Removal of fluid from left arm tissue via needle aspiration."
+                    },
+                    {
+                        "proc_name": "Resection of Liver, Percutaneous Endoscopic Approach",
+                        "description": "Complete removal of the liver lobe via percutaneous endoscopic method."
+                    },
+                    {
+                        "proc_name": "Bypass Stomach to Ileum, Open Approach",
+                        "description": "Creating a new connection from the stomach to the ileum through open surgery."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Tibia",
+                        "description": "Surgical placement of fixation device in the left shin bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Intraluminal Device into Right Internal Jugular Vein",
+                        "description": "Placing a catheter or similar device into the jugular vein."
+                    },
+                    {
+                        "proc_name": "Insertion of Cardiac Lead into Chest Subcutaneous Tissue",
+                        "description": "Placement of an electrical lead under the skin in the chest."
+                    },
+                    {
+                        "proc_name": "Insertion of Pacemaker, Dual Chamber into Chest Subcutaneous Tissue",
+                        "description": "Surgical insertion of a dual-chamber pacemaker under the chest skin."
+                    },
+                    {
+                        "proc_name": "Resection of Thyroid Gland, Open Approach",
+                        "description": "Complete surgical removal of the thyroid gland."
+                    },
+                    {
+                        "proc_name": "Destruction of Bladder, Via Natural or Artificial Opening",
+                        "description": "Destruction of bladder tissue using endoscopic tools."
+                    },
+                    {
+                        "proc_name": "Excision of Gallbladder, Percutaneous Approach, Diagnostic",
+                        "description": "Minimally invasive gallbladder biopsy."
+                    },
+                    {
+                        "proc_name": "Excision of Bladder, Via Natural or Artificial Opening",
+                        "description": "Partial removal of the bladder via an internal orifice."
+                    },
+                    {
+                        "proc_name": "Resection of Stomach, Open Approach",
+                        "description": "Complete removal of the stomach via open surgery."
+                    }
+                ],
+                "labs": [
+                    {
+                        "lab_name": "Albumin; serum",
+                        "cpt_code": "82040"
+                    }
+                ],
+                "patient_ref": {
+                    "$oid": "699690a19d664b27a141ad26"
+                },
+                "provider_ref": {
+                    "$oid": "6996914f9d664b27a141ad5d"
+                }
+            }
+        ]
+    },
+    {
+        "patient_info": {
+            "_id": {
+                "$oid": "699690a19d664b27a141ad27"
+            },
+            "patient_id": 2,
+            "first_name": "Billy",
+            "last_name": "Sheppard",
+            "dob": {
+                "$date": "2000-05-29T00:00:00Z"
+            },
+            "gender": "Female"
+        },
+        "total_visits": 5,
+        "visit_history": [
+            {
+                "_id": {
+                    "$oid": "6996a0c09d664b27a141aec6"
+                },
+                "visit_id": 10,
+                "patient_id": 2,
+                "provider_id": 36,
+                "visit_date": {
+                    "$date": "2023-09-29T00:00:00Z"
+                },
+                "symptoms": [
+                    "Dry mouth and sore throat",
+                    "Nausea and abdominal cramping after eating"
+                ],
+                "diagnoses": [
+                    {
+                        "name": "Myalgia",
+                        "icd10_code": "M79.1"
+                    }
+                ],
+                "procedures": [
+                    {
+                        "proc_name": "Transfusion of Nonautologous Red Blood Cells into Peripheral Vein",
+                        "description": "Administration of donor red blood cells into peripheral vein."
+                    },
+                    {
+                        "proc_name": "Excision of Appendix, Via Natural or Artificial Opening Endoscopic",
+                        "description": "Partial removal of the appendix using endoscopic approach."
+                    },
+                    {
+                        "proc_name": "Repair Large Intestine, Open Approach",
+                        "description": "Surgical repair of large intestine using open approach."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Femur",
+                        "description": "Surgical placement of fixation device in the left thigh bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Endotracheal Airway into Trachea, Via Natural Opening",
+                        "description": "Placing a tube into the trachea to maintain an open airway."
+                    },
+                    {
+                        "proc_name": "Removal of Drainage Device from Trunk Subcutaneous Tissue",
+                        "description": "Surgical removal of previously inserted drainage device."
+                    },
+                    {
+                        "proc_name": "Repair Right Lower Leg Muscle, Open Approach",
+                        "description": "Surgical repair of muscle in right lower leg using open surgery."
+                    },
+                    {
+                        "proc_name": "Resection of Uterus, Open Approach",
+                        "description": "Complete surgical removal of the uterus."
+                    },
+                    {
+                        "proc_name": "Drainage of Left Lower Arm Subcutaneous Tissue, Percutaneous",
+                        "description": "Removal of fluid from left arm tissue via needle aspiration."
+                    },
+                    {
+                        "proc_name": "Resection of Liver, Percutaneous Endoscopic Approach",
+                        "description": "Complete removal of the liver lobe via percutaneous endoscopic method."
+                    },
+                    {
+                        "proc_name": "Bypass Stomach to Ileum, Open Approach",
+                        "description": "Creating a new connection from the stomach to the ileum through open surgery."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Tibia",
+                        "description": "Surgical placement of fixation device in the left shin bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Intraluminal Device into Right Internal Jugular Vein",
+                        "description": "Placing a catheter or similar device into the jugular vein."
+                    },
+                    {
+                        "proc_name": "Insertion of Cardiac Lead into Chest Subcutaneous Tissue",
+                        "description": "Placement of an electrical lead under the skin in the chest."
+                    },
+                    {
+                        "proc_name": "Insertion of Pacemaker, Dual Chamber into Chest Subcutaneous Tissue",
+                        "description": "Surgical insertion of a dual-chamber pacemaker under the chest skin."
+                    },
+                    {
+                        "proc_name": "Resection of Thyroid Gland, Open Approach",
+                        "description": "Complete surgical removal of the thyroid gland."
+                    },
+                    {
+                        "proc_name": "Destruction of Bladder, Via Natural or Artificial Opening",
+                        "description": "Destruction of bladder tissue using endoscopic tools."
+                    },
+                    {
+                        "proc_name": "Excision of Gallbladder, Percutaneous Approach, Diagnostic",
+                        "description": "Minimally invasive gallbladder biopsy."
+                    },
+                    {
+                        "proc_name": "Excision of Bladder, Via Natural or Artificial Opening",
+                        "description": "Partial removal of the bladder via an internal orifice."
+                    },
+                    {
+                        "proc_name": "Resection of Stomach, Open Approach",
+                        "description": "Complete removal of the stomach via open surgery."
+                    }
+                ],
+                "labs": [
+                    {
+                        "lab_name": "Urinalysis, non-automated, without microscopy",
+                        "cpt_code": "81002"
+                    },
+                    {
+                        "lab_name": "Vitamin D; 25 hydroxy",
+                        "cpt_code": "82306"
+                    }
+                ],
+                "patient_ref": {
+                    "$oid": "699690a19d664b27a141ad27"
+                },
+                "provider_ref": {
+                    "$oid": "6996914f9d664b27a141ad7b"
+                }
+            },
+            {
+                "_id": {
+                    "$oid": "6996a0c19d664b27a141aec7"
+                },
+                "visit_id": 11,
+                "patient_id": 2,
+                "provider_id": 36,
+                "visit_date": {
+                    "$date": "2024-11-17T00:00:00Z"
+                },
+                "symptoms": [
+                    "Intermittent fever and chills",
+                    "Painful muscle cramps during the night"
+                ],
+                "diagnoses": [
+                    {
+                        "name": "Essential (primary) hypertension",
+                        "icd10_code": "I10"
+                    },
+                    {
+                        "name": "Major depressive disorder, recurrent, moderate",
+                        "icd10_code": "F33.1"
+                    },
+                    {
+                        "name": "Cellulitis of left lower limb",
+                        "icd10_code": "L03.116"
+                    },
+                    {
+                        "name": "Headache",
+                        "icd10_code": "R51"
+                    },
+                    {
+                        "name": "Acute upper respiratory infection, unspecified",
+                        "icd10_code": "J06.9"
+                    }
+                ],
+                "procedures": [
+                    {
+                        "proc_name": "Transfusion of Nonautologous Red Blood Cells into Peripheral Vein",
+                        "description": "Administration of donor red blood cells into peripheral vein."
+                    },
+                    {
+                        "proc_name": "Excision of Appendix, Via Natural or Artificial Opening Endoscopic",
+                        "description": "Partial removal of the appendix using endoscopic approach."
+                    },
+                    {
+                        "proc_name": "Repair Large Intestine, Open Approach",
+                        "description": "Surgical repair of large intestine using open approach."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Femur",
+                        "description": "Surgical placement of fixation device in the left thigh bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Endotracheal Airway into Trachea, Via Natural Opening",
+                        "description": "Placing a tube into the trachea to maintain an open airway."
+                    },
+                    {
+                        "proc_name": "Removal of Drainage Device from Trunk Subcutaneous Tissue",
+                        "description": "Surgical removal of previously inserted drainage device."
+                    },
+                    {
+                        "proc_name": "Repair Right Lower Leg Muscle, Open Approach",
+                        "description": "Surgical repair of muscle in right lower leg using open surgery."
+                    },
+                    {
+                        "proc_name": "Resection of Uterus, Open Approach",
+                        "description": "Complete surgical removal of the uterus."
+                    },
+                    {
+                        "proc_name": "Drainage of Left Lower Arm Subcutaneous Tissue, Percutaneous",
+                        "description": "Removal of fluid from left arm tissue via needle aspiration."
+                    },
+                    {
+                        "proc_name": "Resection of Liver, Percutaneous Endoscopic Approach",
+                        "description": "Complete removal of the liver lobe via percutaneous endoscopic method."
+                    },
+                    {
+                        "proc_name": "Bypass Stomach to Ileum, Open Approach",
+                        "description": "Creating a new connection from the stomach to the ileum through open surgery."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Tibia",
+                        "description": "Surgical placement of fixation device in the left shin bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Intraluminal Device into Right Internal Jugular Vein",
+                        "description": "Placing a catheter or similar device into the jugular vein."
+                    },
+                    {
+                        "proc_name": "Insertion of Cardiac Lead into Chest Subcutaneous Tissue",
+                        "description": "Placement of an electrical lead under the skin in the chest."
+                    },
+                    {
+                        "proc_name": "Insertion of Pacemaker, Dual Chamber into Chest Subcutaneous Tissue",
+                        "description": "Surgical insertion of a dual-chamber pacemaker under the chest skin."
+                    },
+                    {
+                        "proc_name": "Resection of Thyroid Gland, Open Approach",
+                        "description": "Complete surgical removal of the thyroid gland."
+                    },
+                    {
+                        "proc_name": "Destruction of Bladder, Via Natural or Artificial Opening",
+                        "description": "Destruction of bladder tissue using endoscopic tools."
+                    },
+                    {
+                        "proc_name": "Excision of Gallbladder, Percutaneous Approach, Diagnostic",
+                        "description": "Minimally invasive gallbladder biopsy."
+                    },
+                    {
+                        "proc_name": "Excision of Bladder, Via Natural or Artificial Opening",
+                        "description": "Partial removal of the bladder via an internal orifice."
+                    },
+                    {
+                        "proc_name": "Resection of Stomach, Open Approach",
+                        "description": "Complete removal of the stomach via open surgery."
+                    }
+                ],
+                "labs": [
+                    {
+                        "lab_name": "Urea nitrogen; quantitative",
+                        "cpt_code": "84550"
+                    },
+                    {
+                        "lab_name": "Ferritin",
+                        "cpt_code": "82728"
+                    },
+                    {
+                        "lab_name": "Magnesium",
+                        "cpt_code": "83735"
+                    }
+                ],
+                "patient_ref": {
+                    "$oid": "699690a19d664b27a141ad27"
+                },
+                "provider_ref": {
+                    "$oid": "6996914f9d664b27a141ad7b"
+                }
+            },
+            {
+                "_id": {
+                    "$oid": "6996a0c19d664b27a141aec8"
+                },
+                "visit_id": 12,
+                "patient_id": 2,
+                "provider_id": 36,
+                "visit_date": {
+                    "$date": "2024-08-02T00:00:00Z"
+                },
+                "symptoms": [
+                    "Frequent urination and excessive thirst"
+                ],
+                "diagnoses": [
+                    {
+                        "name": "Type 2 diabetes mellitus without complications",
+                        "icd10_code": "E11.9"
+                    },
+                    {
+                        "name": "Headache",
+                        "icd10_code": "R51"
+                    },
+                    {
+                        "name": "Hyperlipidemia, unspecified",
+                        "icd10_code": "E78.5"
+                    },
+                    {
+                        "name": "Viral infection, unspecified",
+                        "icd10_code": "B34.9"
+                    },
+                    {
+                        "name": "Presbyopia",
+                        "icd10_code": "H52.4"
+                    },
+                    {
+                        "name": "Psoriasis vulgaris",
+                        "icd10_code": "L40.0"
+                    },
+                    {
+                        "name": "Pain in right knee",
+                        "icd10_code": "M25.561"
+                    },
+                    {
+                        "name": "Myalgia",
+                        "icd10_code": "M79.1"
+                    },
+                    {
+                        "name": "Essential (primary) hypertension",
+                        "icd10_code": "I10"
+                    }
+                ],
+                "procedures": [
+                    {
+                        "proc_name": "Transfusion of Nonautologous Red Blood Cells into Peripheral Vein",
+                        "description": "Administration of donor red blood cells into peripheral vein."
+                    },
+                    {
+                        "proc_name": "Excision of Appendix, Via Natural or Artificial Opening Endoscopic",
+                        "description": "Partial removal of the appendix using endoscopic approach."
+                    },
+                    {
+                        "proc_name": "Repair Large Intestine, Open Approach",
+                        "description": "Surgical repair of large intestine using open approach."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Femur",
+                        "description": "Surgical placement of fixation device in the left thigh bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Endotracheal Airway into Trachea, Via Natural Opening",
+                        "description": "Placing a tube into the trachea to maintain an open airway."
+                    },
+                    {
+                        "proc_name": "Removal of Drainage Device from Trunk Subcutaneous Tissue",
+                        "description": "Surgical removal of previously inserted drainage device."
+                    },
+                    {
+                        "proc_name": "Repair Right Lower Leg Muscle, Open Approach",
+                        "description": "Surgical repair of muscle in right lower leg using open surgery."
+                    },
+                    {
+                        "proc_name": "Resection of Uterus, Open Approach",
+                        "description": "Complete surgical removal of the uterus."
+                    },
+                    {
+                        "proc_name": "Drainage of Left Lower Arm Subcutaneous Tissue, Percutaneous",
+                        "description": "Removal of fluid from left arm tissue via needle aspiration."
+                    },
+                    {
+                        "proc_name": "Resection of Liver, Percutaneous Endoscopic Approach",
+                        "description": "Complete removal of the liver lobe via percutaneous endoscopic method."
+                    },
+                    {
+                        "proc_name": "Bypass Stomach to Ileum, Open Approach",
+                        "description": "Creating a new connection from the stomach to the ileum through open surgery."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Tibia",
+                        "description": "Surgical placement of fixation device in the left shin bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Intraluminal Device into Right Internal Jugular Vein",
+                        "description": "Placing a catheter or similar device into the jugular vein."
+                    },
+                    {
+                        "proc_name": "Insertion of Cardiac Lead into Chest Subcutaneous Tissue",
+                        "description": "Placement of an electrical lead under the skin in the chest."
+                    },
+                    {
+                        "proc_name": "Insertion of Pacemaker, Dual Chamber into Chest Subcutaneous Tissue",
+                        "description": "Surgical insertion of a dual-chamber pacemaker under the chest skin."
+                    },
+                    {
+                        "proc_name": "Resection of Thyroid Gland, Open Approach",
+                        "description": "Complete surgical removal of the thyroid gland."
+                    },
+                    {
+                        "proc_name": "Destruction of Bladder, Via Natural or Artificial Opening",
+                        "description": "Destruction of bladder tissue using endoscopic tools."
+                    },
+                    {
+                        "proc_name": "Excision of Gallbladder, Percutaneous Approach, Diagnostic",
+                        "description": "Minimally invasive gallbladder biopsy."
+                    },
+                    {
+                        "proc_name": "Excision of Bladder, Via Natural or Artificial Opening",
+                        "description": "Partial removal of the bladder via an internal orifice."
+                    },
+                    {
+                        "proc_name": "Resection of Stomach, Open Approach",
+                        "description": "Complete removal of the stomach via open surgery."
+                    }
+                ],
+                "labs": [
+                    {
+                        "lab_name": "Cobalamin (Vitamin B-12)",
+                        "cpt_code": "82607"
+                    },
+                    {
+                        "lab_name": "Lipid panel",
+                        "cpt_code": "80061"
+                    },
+                    {
+                        "lab_name": "Magnesium",
+                        "cpt_code": "83735"
+                    },
+                    {
+                        "lab_name": "Ferritin",
+                        "cpt_code": "82728"
+                    },
+                    {
+                        "lab_name": "Hemoglobin A1c",
+                        "cpt_code": "83036"
+                    }
+                ],
+                "patient_ref": {
+                    "$oid": "699690a19d664b27a141ad27"
+                },
+                "provider_ref": {
+                    "$oid": "6996914f9d664b27a141ad7b"
+                }
+            },
+            {
+                "_id": {
+                    "$oid": "6996a0c19d664b27a141aec9"
+                },
+                "visit_id": 13,
+                "patient_id": 2,
+                "provider_id": 36,
+                "visit_date": {
+                    "$date": "2024-12-17T00:00:00Z"
+                },
+                "symptoms": [
+                    "Pain and swelling in the joints",
+                    "Difficulty swallowing solid foods",
+                    "Persistent runny nose and sneezing",
+                    "Difficulty falling asleep and frequent waking"
+                ],
+                "diagnoses": [
+                    {
+                        "name": "Low back pain",
+                        "icd10_code": "M54.5"
+                    },
+                    {
+                        "name": "Noninfective gastroenteritis and colitis, unspecified",
+                        "icd10_code": "K52.9"
+                    },
+                    {
+                        "name": "Myalgia",
+                        "icd10_code": "M79.1"
+                    },
+                    {
+                        "name": "Hyperlipidemia, unspecified",
+                        "icd10_code": "E78.5"
+                    },
+                    {
+                        "name": "Unspecified asthma, uncomplicated",
+                        "icd10_code": "J45.909"
+                    },
+                    {
+                        "name": "Migraine, unspecified, not intractable, without status migrainosus",
+                        "icd10_code": "G43.909"
+                    },
+                    {
+                        "name": "Generalized anxiety disorder",
+                        "icd10_code": "F41.1"
+                    }
+                ],
+                "procedures": [
+                    {
+                        "proc_name": "Transfusion of Nonautologous Red Blood Cells into Peripheral Vein",
+                        "description": "Administration of donor red blood cells into peripheral vein."
+                    },
+                    {
+                        "proc_name": "Excision of Appendix, Via Natural or Artificial Opening Endoscopic",
+                        "description": "Partial removal of the appendix using endoscopic approach."
+                    },
+                    {
+                        "proc_name": "Repair Large Intestine, Open Approach",
+                        "description": "Surgical repair of large intestine using open approach."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Femur",
+                        "description": "Surgical placement of fixation device in the left thigh bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Endotracheal Airway into Trachea, Via Natural Opening",
+                        "description": "Placing a tube into the trachea to maintain an open airway."
+                    },
+                    {
+                        "proc_name": "Removal of Drainage Device from Trunk Subcutaneous Tissue",
+                        "description": "Surgical removal of previously inserted drainage device."
+                    },
+                    {
+                        "proc_name": "Repair Right Lower Leg Muscle, Open Approach",
+                        "description": "Surgical repair of muscle in right lower leg using open surgery."
+                    },
+                    {
+                        "proc_name": "Resection of Uterus, Open Approach",
+                        "description": "Complete surgical removal of the uterus."
+                    },
+                    {
+                        "proc_name": "Drainage of Left Lower Arm Subcutaneous Tissue, Percutaneous",
+                        "description": "Removal of fluid from left arm tissue via needle aspiration."
+                    },
+                    {
+                        "proc_name": "Resection of Liver, Percutaneous Endoscopic Approach",
+                        "description": "Complete removal of the liver lobe via percutaneous endoscopic method."
+                    },
+                    {
+                        "proc_name": "Bypass Stomach to Ileum, Open Approach",
+                        "description": "Creating a new connection from the stomach to the ileum through open surgery."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Tibia",
+                        "description": "Surgical placement of fixation device in the left shin bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Intraluminal Device into Right Internal Jugular Vein",
+                        "description": "Placing a catheter or similar device into the jugular vein."
+                    },
+                    {
+                        "proc_name": "Insertion of Cardiac Lead into Chest Subcutaneous Tissue",
+                        "description": "Placement of an electrical lead under the skin in the chest."
+                    },
+                    {
+                        "proc_name": "Insertion of Pacemaker, Dual Chamber into Chest Subcutaneous Tissue",
+                        "description": "Surgical insertion of a dual-chamber pacemaker under the chest skin."
+                    },
+                    {
+                        "proc_name": "Resection of Thyroid Gland, Open Approach",
+                        "description": "Complete surgical removal of the thyroid gland."
+                    },
+                    {
+                        "proc_name": "Destruction of Bladder, Via Natural or Artificial Opening",
+                        "description": "Destruction of bladder tissue using endoscopic tools."
+                    },
+                    {
+                        "proc_name": "Excision of Gallbladder, Percutaneous Approach, Diagnostic",
+                        "description": "Minimally invasive gallbladder biopsy."
+                    },
+                    {
+                        "proc_name": "Excision of Bladder, Via Natural or Artificial Opening",
+                        "description": "Partial removal of the bladder via an internal orifice."
+                    },
+                    {
+                        "proc_name": "Resection of Stomach, Open Approach",
+                        "description": "Complete removal of the stomach via open surgery."
+                    }
+                ],
+                "labs": [
+                    {
+                        "lab_name": "Phosphatase, alkaline",
+                        "cpt_code": "84075"
+                    },
+                    {
+                        "lab_name": "Thyroid stimulating hormone (TSH)",
+                        "cpt_code": "84443"
+                    },
+                    {
+                        "lab_name": "Prostate specific antigen (PSA); total",
+                        "cpt_code": "84153"
+                    },
+                    {
+                        "lab_name": "Vitamin D; 25 hydroxy",
+                        "cpt_code": "82306"
+                    },
+                    {
+                        "lab_name": "Lactic acid",
+                        "cpt_code": "83615"
+                    },
+                    {
+                        "lab_name": "Ferritin",
+                        "cpt_code": "82728"
+                    }
+                ],
+                "patient_ref": {
+                    "$oid": "699690a19d664b27a141ad27"
+                },
+                "provider_ref": {
+                    "$oid": "6996914f9d664b27a141ad7b"
+                }
+            },
+            {
+                "_id": {
+                    "$oid": "6996a0c19d664b27a141aeca"
+                },
+                "visit_id": 14,
+                "patient_id": 2,
+                "provider_id": 36,
+                "visit_date": {
+                    "$date": "2024-06-30T00:00:00Z"
+                },
+                "symptoms": [
+                    "Dry mouth and sore throat",
+                    "Shortness of breath during physical activity",
+                    "Fatigue and low energy levels throughout the day",
+                    "Intermittent fever and chills"
+                ],
+                "diagnoses": [
+                    {
+                        "name": "Urinary tract infection, site not specified",
+                        "icd10_code": "N39.0"
+                    },
+                    {
+                        "name": "Myalgia",
+                        "icd10_code": "M79.1"
+                    },
+                    {
+                        "name": "Acute upper respiratory infection, unspecified",
+                        "icd10_code": "J06.9"
+                    },
+                    {
+                        "name": "Migraine, unspecified, not intractable, without status migrainosus",
+                        "icd10_code": "G43.909"
+                    },
+                    {
+                        "name": "Psoriasis vulgaris",
+                        "icd10_code": "L40.0"
+                    }
+                ],
+                "procedures": [
+                    {
+                        "proc_name": "Transfusion of Nonautologous Red Blood Cells into Peripheral Vein",
+                        "description": "Administration of donor red blood cells into peripheral vein."
+                    },
+                    {
+                        "proc_name": "Excision of Appendix, Via Natural or Artificial Opening Endoscopic",
+                        "description": "Partial removal of the appendix using endoscopic approach."
+                    },
+                    {
+                        "proc_name": "Repair Large Intestine, Open Approach",
+                        "description": "Surgical repair of large intestine using open approach."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Femur",
+                        "description": "Surgical placement of fixation device in the left thigh bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Endotracheal Airway into Trachea, Via Natural Opening",
+                        "description": "Placing a tube into the trachea to maintain an open airway."
+                    },
+                    {
+                        "proc_name": "Removal of Drainage Device from Trunk Subcutaneous Tissue",
+                        "description": "Surgical removal of previously inserted drainage device."
+                    },
+                    {
+                        "proc_name": "Repair Right Lower Leg Muscle, Open Approach",
+                        "description": "Surgical repair of muscle in right lower leg using open surgery."
+                    },
+                    {
+                        "proc_name": "Resection of Uterus, Open Approach",
+                        "description": "Complete surgical removal of the uterus."
+                    },
+                    {
+                        "proc_name": "Drainage of Left Lower Arm Subcutaneous Tissue, Percutaneous",
+                        "description": "Removal of fluid from left arm tissue via needle aspiration."
+                    },
+                    {
+                        "proc_name": "Resection of Liver, Percutaneous Endoscopic Approach",
+                        "description": "Complete removal of the liver lobe via percutaneous endoscopic method."
+                    },
+                    {
+                        "proc_name": "Bypass Stomach to Ileum, Open Approach",
+                        "description": "Creating a new connection from the stomach to the ileum through open surgery."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Tibia",
+                        "description": "Surgical placement of fixation device in the left shin bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Intraluminal Device into Right Internal Jugular Vein",
+                        "description": "Placing a catheter or similar device into the jugular vein."
+                    },
+                    {
+                        "proc_name": "Insertion of Cardiac Lead into Chest Subcutaneous Tissue",
+                        "description": "Placement of an electrical lead under the skin in the chest."
+                    },
+                    {
+                        "proc_name": "Insertion of Pacemaker, Dual Chamber into Chest Subcutaneous Tissue",
+                        "description": "Surgical insertion of a dual-chamber pacemaker under the chest skin."
+                    },
+                    {
+                        "proc_name": "Resection of Thyroid Gland, Open Approach",
+                        "description": "Complete surgical removal of the thyroid gland."
+                    },
+                    {
+                        "proc_name": "Destruction of Bladder, Via Natural or Artificial Opening",
+                        "description": "Destruction of bladder tissue using endoscopic tools."
+                    },
+                    {
+                        "proc_name": "Excision of Gallbladder, Percutaneous Approach, Diagnostic",
+                        "description": "Minimally invasive gallbladder biopsy."
+                    },
+                    {
+                        "proc_name": "Excision of Bladder, Via Natural or Artificial Opening",
+                        "description": "Partial removal of the bladder via an internal orifice."
+                    },
+                    {
+                        "proc_name": "Resection of Stomach, Open Approach",
+                        "description": "Complete removal of the stomach via open surgery."
+                    }
+                ],
+                "labs": [
+                    {
+                        "lab_name": "Phosphatase, alkaline",
+                        "cpt_code": "84075"
+                    },
+                    {
+                        "lab_name": "Lipid panel",
+                        "cpt_code": "80061"
+                    },
+                    {
+                        "lab_name": "Prostate specific antigen (PSA); total",
+                        "cpt_code": "84153"
+                    },
+                    {
+                        "lab_name": "Iron; serum",
+                        "cpt_code": "83540"
+                    },
+                    {
+                        "lab_name": "Urea nitrogen; quantitative",
+                        "cpt_code": "84550"
+                    }
+                ],
+                "patient_ref": {
+                    "$oid": "699690a19d664b27a141ad27"
+                },
+                "provider_ref": {
+                    "$oid": "6996914f9d664b27a141ad7b"
+                }
+            }
+        ]
+    },
+    {
+        "patient_info": {
+            "_id": {
+                "$oid": "699690a19d664b27a141ad28"
+            },
+            "patient_id": 3,
+            "first_name": "Richard",
+            "last_name": "Bowers",
+            "dob": {
+                "$date": "1975-07-22T00:00:00Z"
+            },
+            "gender": "Male"
+        },
+        "total_visits": 9,
+        "visit_history": [
+            {
+                "_id": {
+                    "$oid": "6996a0c19d664b27a141aecb"
+                },
+                "visit_id": 15,
+                "patient_id": 3,
+                "provider_id": 39,
+                "visit_date": {
+                    "$date": "2023-08-02T00:00:00Z"
+                },
+                "symptoms": [
+                    "Loss of appetite and unintended weight loss",
+                    "Nausea and abdominal cramping after eating"
+                ],
+                "diagnoses": [
+                    {
+                        "name": "Myalgia",
+                        "icd10_code": "M79.1"
+                    },
+                    {
+                        "name": "Major depressive disorder, recurrent, moderate",
+                        "icd10_code": "F33.1"
+                    },
+                    {
+                        "name": "Cellulitis of left lower limb",
+                        "icd10_code": "L03.116"
+                    },
+                    {
+                        "name": "Acute upper respiratory infection, unspecified",
+                        "icd10_code": "J06.9"
+                    },
+                    {
+                        "name": "Psoriasis vulgaris",
+                        "icd10_code": "L40.0"
+                    },
+                    {
+                        "name": "Type 2 diabetes mellitus without complications",
+                        "icd10_code": "E11.9"
+                    }
+                ],
+                "procedures": [
+                    {
+                        "proc_name": "Transfusion of Nonautologous Red Blood Cells into Peripheral Vein",
+                        "description": "Administration of donor red blood cells into peripheral vein."
+                    },
+                    {
+                        "proc_name": "Excision of Appendix, Via Natural or Artificial Opening Endoscopic",
+                        "description": "Partial removal of the appendix using endoscopic approach."
+                    },
+                    {
+                        "proc_name": "Repair Large Intestine, Open Approach",
+                        "description": "Surgical repair of large intestine using open approach."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Femur",
+                        "description": "Surgical placement of fixation device in the left thigh bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Endotracheal Airway into Trachea, Via Natural Opening",
+                        "description": "Placing a tube into the trachea to maintain an open airway."
+                    },
+                    {
+                        "proc_name": "Removal of Drainage Device from Trunk Subcutaneous Tissue",
+                        "description": "Surgical removal of previously inserted drainage device."
+                    },
+                    {
+                        "proc_name": "Repair Right Lower Leg Muscle, Open Approach",
+                        "description": "Surgical repair of muscle in right lower leg using open surgery."
+                    },
+                    {
+                        "proc_name": "Resection of Uterus, Open Approach",
+                        "description": "Complete surgical removal of the uterus."
+                    },
+                    {
+                        "proc_name": "Drainage of Left Lower Arm Subcutaneous Tissue, Percutaneous",
+                        "description": "Removal of fluid from left arm tissue via needle aspiration."
+                    },
+                    {
+                        "proc_name": "Resection of Liver, Percutaneous Endoscopic Approach",
+                        "description": "Complete removal of the liver lobe via percutaneous endoscopic method."
+                    },
+                    {
+                        "proc_name": "Bypass Stomach to Ileum, Open Approach",
+                        "description": "Creating a new connection from the stomach to the ileum through open surgery."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Tibia",
+                        "description": "Surgical placement of fixation device in the left shin bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Intraluminal Device into Right Internal Jugular Vein",
+                        "description": "Placing a catheter or similar device into the jugular vein."
+                    },
+                    {
+                        "proc_name": "Insertion of Cardiac Lead into Chest Subcutaneous Tissue",
+                        "description": "Placement of an electrical lead under the skin in the chest."
+                    },
+                    {
+                        "proc_name": "Insertion of Pacemaker, Dual Chamber into Chest Subcutaneous Tissue",
+                        "description": "Surgical insertion of a dual-chamber pacemaker under the chest skin."
+                    },
+                    {
+                        "proc_name": "Resection of Thyroid Gland, Open Approach",
+                        "description": "Complete surgical removal of the thyroid gland."
+                    },
+                    {
+                        "proc_name": "Destruction of Bladder, Via Natural or Artificial Opening",
+                        "description": "Destruction of bladder tissue using endoscopic tools."
+                    },
+                    {
+                        "proc_name": "Excision of Gallbladder, Percutaneous Approach, Diagnostic",
+                        "description": "Minimally invasive gallbladder biopsy."
+                    },
+                    {
+                        "proc_name": "Excision of Bladder, Via Natural or Artificial Opening",
+                        "description": "Partial removal of the bladder via an internal orifice."
+                    },
+                    {
+                        "proc_name": "Resection of Stomach, Open Approach",
+                        "description": "Complete removal of the stomach via open surgery."
+                    }
+                ],
+                "labs": [
+                    {
+                        "lab_name": "Natriuretic peptide",
+                        "cpt_code": "83880"
+                    },
+                    {
+                        "lab_name": "Cobalamin (Vitamin B-12)",
+                        "cpt_code": "82607"
+                    },
+                    {
+                        "lab_name": "Urea nitrogen; quantitative",
+                        "cpt_code": "84550"
+                    },
+                    {
+                        "lab_name": "Albumin; serum",
+                        "cpt_code": "82040"
+                    },
+                    {
+                        "lab_name": "Urinalysis, automated, with microscopy",
+                        "cpt_code": "81001"
+                    },
+                    {
+                        "lab_name": "Ferritin",
+                        "cpt_code": "82728"
+                    },
+                    {
+                        "lab_name": "Vitamin D; 25 hydroxy",
+                        "cpt_code": "82306"
+                    },
+                    {
+                        "lab_name": "Thyroid stimulating hormone (TSH)",
+                        "cpt_code": "84443"
+                    },
+                    {
+                        "lab_name": "Phosphatase, alkaline",
+                        "cpt_code": "84075"
+                    }
+                ],
+                "patient_ref": {
+                    "$oid": "699690a19d664b27a141ad28"
+                },
+                "provider_ref": {
+                    "$oid": "6996914f9d664b27a141ad7e"
+                }
+            },
+            {
+                "_id": {
+                    "$oid": "6996a0c19d664b27a141aecc"
+                },
+                "visit_id": 16,
+                "patient_id": 3,
+                "provider_id": 39,
+                "visit_date": {
+                    "$date": "2025-03-14T00:00:00Z"
+                },
+                "symptoms": [
+                    "Tingling and numbness in fingers and toes",
+                    "Blurred vision and eye strain",
+                    "Itchy rash spreading across the arms and legs",
+                    "Swelling and redness around a wound",
+                    "Dry, scaly patches on the skin"
+                ],
+                "diagnoses": [
+                    {
+                        "name": "Headache",
+                        "icd10_code": "R51"
+                    },
+                    {
+                        "name": "Presbyopia",
+                        "icd10_code": "H52.4"
+                    },
+                    {
+                        "name": "Essential (primary) hypertension",
+                        "icd10_code": "I10"
+                    },
+                    {
+                        "name": "Noninfective gastroenteritis and colitis, unspecified",
+                        "icd10_code": "K52.9"
+                    },
+                    {
+                        "name": "Unspecified asthma, uncomplicated",
+                        "icd10_code": "J45.909"
+                    },
+                    {
+                        "name": "Generalized anxiety disorder",
+                        "icd10_code": "F41.1"
+                    },
+                    {
+                        "name": "Chest pain, unspecified",
+                        "icd10_code": "R07.9"
+                    },
+                    {
+                        "name": "Hyperlipidemia, unspecified",
+                        "icd10_code": "E78.5"
+                    }
+                ],
+                "procedures": [
+                    {
+                        "proc_name": "Transfusion of Nonautologous Red Blood Cells into Peripheral Vein",
+                        "description": "Administration of donor red blood cells into peripheral vein."
+                    },
+                    {
+                        "proc_name": "Excision of Appendix, Via Natural or Artificial Opening Endoscopic",
+                        "description": "Partial removal of the appendix using endoscopic approach."
+                    },
+                    {
+                        "proc_name": "Repair Large Intestine, Open Approach",
+                        "description": "Surgical repair of large intestine using open approach."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Femur",
+                        "description": "Surgical placement of fixation device in the left thigh bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Endotracheal Airway into Trachea, Via Natural Opening",
+                        "description": "Placing a tube into the trachea to maintain an open airway."
+                    },
+                    {
+                        "proc_name": "Removal of Drainage Device from Trunk Subcutaneous Tissue",
+                        "description": "Surgical removal of previously inserted drainage device."
+                    },
+                    {
+                        "proc_name": "Repair Right Lower Leg Muscle, Open Approach",
+                        "description": "Surgical repair of muscle in right lower leg using open surgery."
+                    },
+                    {
+                        "proc_name": "Resection of Uterus, Open Approach",
+                        "description": "Complete surgical removal of the uterus."
+                    },
+                    {
+                        "proc_name": "Drainage of Left Lower Arm Subcutaneous Tissue, Percutaneous",
+                        "description": "Removal of fluid from left arm tissue via needle aspiration."
+                    },
+                    {
+                        "proc_name": "Resection of Liver, Percutaneous Endoscopic Approach",
+                        "description": "Complete removal of the liver lobe via percutaneous endoscopic method."
+                    },
+                    {
+                        "proc_name": "Bypass Stomach to Ileum, Open Approach",
+                        "description": "Creating a new connection from the stomach to the ileum through open surgery."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Tibia",
+                        "description": "Surgical placement of fixation device in the left shin bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Intraluminal Device into Right Internal Jugular Vein",
+                        "description": "Placing a catheter or similar device into the jugular vein."
+                    },
+                    {
+                        "proc_name": "Insertion of Cardiac Lead into Chest Subcutaneous Tissue",
+                        "description": "Placement of an electrical lead under the skin in the chest."
+                    },
+                    {
+                        "proc_name": "Insertion of Pacemaker, Dual Chamber into Chest Subcutaneous Tissue",
+                        "description": "Surgical insertion of a dual-chamber pacemaker under the chest skin."
+                    },
+                    {
+                        "proc_name": "Resection of Thyroid Gland, Open Approach",
+                        "description": "Complete surgical removal of the thyroid gland."
+                    },
+                    {
+                        "proc_name": "Destruction of Bladder, Via Natural or Artificial Opening",
+                        "description": "Destruction of bladder tissue using endoscopic tools."
+                    },
+                    {
+                        "proc_name": "Excision of Gallbladder, Percutaneous Approach, Diagnostic",
+                        "description": "Minimally invasive gallbladder biopsy."
+                    },
+                    {
+                        "proc_name": "Excision of Bladder, Via Natural or Artificial Opening",
+                        "description": "Partial removal of the bladder via an internal orifice."
+                    },
+                    {
+                        "proc_name": "Resection of Stomach, Open Approach",
+                        "description": "Complete removal of the stomach via open surgery."
+                    }
+                ],
+                "labs": [
+                    {
+                        "lab_name": "Hemoglobin A1c",
+                        "cpt_code": "83036"
+                    },
+                    {
+                        "lab_name": "Vitamin D; 25 hydroxy",
+                        "cpt_code": "82306"
+                    },
+                    {
+                        "lab_name": "Ferritin",
+                        "cpt_code": "82728"
+                    },
+                    {
+                        "lab_name": "Thyroid stimulating hormone (TSH)",
+                        "cpt_code": "84443"
+                    }
+                ],
+                "patient_ref": {
+                    "$oid": "699690a19d664b27a141ad28"
+                },
+                "provider_ref": {
+                    "$oid": "6996914f9d664b27a141ad7e"
+                }
+            },
+            {
+                "_id": {
+                    "$oid": "6996a0c19d664b27a141aecd"
+                },
+                "visit_id": 17,
+                "patient_id": 3,
+                "provider_id": 39,
+                "visit_date": {
+                    "$date": "2025-01-06T00:00:00Z"
+                },
+                "symptoms": [
+                    "Nausea and abdominal cramping after eating",
+                    "Increased anxiety and nervousness",
+                    "Burning sensation during urination",
+                    "Persistent cough and shortness of breath",
+                    "Frequent urination and excessive thirst",
+                    "Sharp pain in the lower back when bending",
+                    "Frequent gas and bloating"
+                ],
+                "diagnoses": [
+                    {
+                        "name": "Unspecified asthma, uncomplicated",
+                        "icd10_code": "J45.909"
+                    },
+                    {
+                        "name": "Low back pain",
+                        "icd10_code": "M54.5"
+                    },
+                    {
+                        "name": "Major depressive disorder, recurrent, moderate",
+                        "icd10_code": "F33.1"
+                    }
+                ],
+                "procedures": [
+                    {
+                        "proc_name": "Transfusion of Nonautologous Red Blood Cells into Peripheral Vein",
+                        "description": "Administration of donor red blood cells into peripheral vein."
+                    },
+                    {
+                        "proc_name": "Excision of Appendix, Via Natural or Artificial Opening Endoscopic",
+                        "description": "Partial removal of the appendix using endoscopic approach."
+                    },
+                    {
+                        "proc_name": "Repair Large Intestine, Open Approach",
+                        "description": "Surgical repair of large intestine using open approach."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Femur",
+                        "description": "Surgical placement of fixation device in the left thigh bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Endotracheal Airway into Trachea, Via Natural Opening",
+                        "description": "Placing a tube into the trachea to maintain an open airway."
+                    },
+                    {
+                        "proc_name": "Removal of Drainage Device from Trunk Subcutaneous Tissue",
+                        "description": "Surgical removal of previously inserted drainage device."
+                    },
+                    {
+                        "proc_name": "Repair Right Lower Leg Muscle, Open Approach",
+                        "description": "Surgical repair of muscle in right lower leg using open surgery."
+                    },
+                    {
+                        "proc_name": "Resection of Uterus, Open Approach",
+                        "description": "Complete surgical removal of the uterus."
+                    },
+                    {
+                        "proc_name": "Drainage of Left Lower Arm Subcutaneous Tissue, Percutaneous",
+                        "description": "Removal of fluid from left arm tissue via needle aspiration."
+                    },
+                    {
+                        "proc_name": "Resection of Liver, Percutaneous Endoscopic Approach",
+                        "description": "Complete removal of the liver lobe via percutaneous endoscopic method."
+                    },
+                    {
+                        "proc_name": "Bypass Stomach to Ileum, Open Approach",
+                        "description": "Creating a new connection from the stomach to the ileum through open surgery."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Tibia",
+                        "description": "Surgical placement of fixation device in the left shin bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Intraluminal Device into Right Internal Jugular Vein",
+                        "description": "Placing a catheter or similar device into the jugular vein."
+                    },
+                    {
+                        "proc_name": "Insertion of Cardiac Lead into Chest Subcutaneous Tissue",
+                        "description": "Placement of an electrical lead under the skin in the chest."
+                    },
+                    {
+                        "proc_name": "Insertion of Pacemaker, Dual Chamber into Chest Subcutaneous Tissue",
+                        "description": "Surgical insertion of a dual-chamber pacemaker under the chest skin."
+                    },
+                    {
+                        "proc_name": "Resection of Thyroid Gland, Open Approach",
+                        "description": "Complete surgical removal of the thyroid gland."
+                    },
+                    {
+                        "proc_name": "Destruction of Bladder, Via Natural or Artificial Opening",
+                        "description": "Destruction of bladder tissue using endoscopic tools."
+                    },
+                    {
+                        "proc_name": "Excision of Gallbladder, Percutaneous Approach, Diagnostic",
+                        "description": "Minimally invasive gallbladder biopsy."
+                    },
+                    {
+                        "proc_name": "Excision of Bladder, Via Natural or Artificial Opening",
+                        "description": "Partial removal of the bladder via an internal orifice."
+                    },
+                    {
+                        "proc_name": "Resection of Stomach, Open Approach",
+                        "description": "Complete removal of the stomach via open surgery."
+                    }
+                ],
+                "labs": [
+                    {
+                        "lab_name": "Creatinine; blood",
+                        "cpt_code": "82565"
+                    },
+                    {
+                        "lab_name": "Prostate specific antigen (PSA); total",
+                        "cpt_code": "84153"
+                    },
+                    {
+                        "lab_name": "Vitamin D; 25 hydroxy",
+                        "cpt_code": "82306"
+                    },
+                    {
+                        "lab_name": "Albumin; serum",
+                        "cpt_code": "82040"
+                    },
+                    {
+                        "lab_name": "Lactic acid",
+                        "cpt_code": "83615"
+                    },
+                    {
+                        "lab_name": "Hemoglobin A1c",
+                        "cpt_code": "83036"
+                    },
+                    {
+                        "lab_name": "Sodium; serum",
+                        "cpt_code": "84295"
+                    },
+                    {
+                        "lab_name": "Ferritin",
+                        "cpt_code": "82728"
+                    }
+                ],
+                "patient_ref": {
+                    "$oid": "699690a19d664b27a141ad28"
+                },
+                "provider_ref": {
+                    "$oid": "6996914f9d664b27a141ad7e"
+                }
+            },
+            {
+                "_id": {
+                    "$oid": "6996a0c19d664b27a141aece"
+                },
+                "visit_id": 18,
+                "patient_id": 3,
+                "provider_id": 39,
+                "visit_date": {
+                    "$date": "2024-05-04T00:00:00Z"
+                },
+                "symptoms": [
+                    "Severe headache with light sensitivity",
+                    "Frequent headaches accompanied by nausea",
+                    "Loss of appetite and unintended weight loss",
+                    "Shortness of breath during physical activity"
+                ],
+                "diagnoses": [
+                    {
+                        "name": "Noninfective gastroenteritis and colitis, unspecified",
+                        "icd10_code": "K52.9"
+                    },
+                    {
+                        "name": "Essential (primary) hypertension",
+                        "icd10_code": "I10"
+                    },
+                    {
+                        "name": "Generalized anxiety disorder",
+                        "icd10_code": "F41.1"
+                    },
+                    {
+                        "name": "Migraine, unspecified, not intractable, without status migrainosus",
+                        "icd10_code": "G43.909"
+                    },
+                    {
+                        "name": "Unspecified asthma, uncomplicated",
+                        "icd10_code": "J45.909"
+                    },
+                    {
+                        "name": "Viral infection, unspecified",
+                        "icd10_code": "B34.9"
+                    },
+                    {
+                        "name": "Hyperlipidemia, unspecified",
+                        "icd10_code": "E78.5"
+                    }
+                ],
+                "procedures": [
+                    {
+                        "proc_name": "Transfusion of Nonautologous Red Blood Cells into Peripheral Vein",
+                        "description": "Administration of donor red blood cells into peripheral vein."
+                    },
+                    {
+                        "proc_name": "Excision of Appendix, Via Natural or Artificial Opening Endoscopic",
+                        "description": "Partial removal of the appendix using endoscopic approach."
+                    },
+                    {
+                        "proc_name": "Repair Large Intestine, Open Approach",
+                        "description": "Surgical repair of large intestine using open approach."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Femur",
+                        "description": "Surgical placement of fixation device in the left thigh bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Endotracheal Airway into Trachea, Via Natural Opening",
+                        "description": "Placing a tube into the trachea to maintain an open airway."
+                    },
+                    {
+                        "proc_name": "Removal of Drainage Device from Trunk Subcutaneous Tissue",
+                        "description": "Surgical removal of previously inserted drainage device."
+                    },
+                    {
+                        "proc_name": "Repair Right Lower Leg Muscle, Open Approach",
+                        "description": "Surgical repair of muscle in right lower leg using open surgery."
+                    },
+                    {
+                        "proc_name": "Resection of Uterus, Open Approach",
+                        "description": "Complete surgical removal of the uterus."
+                    },
+                    {
+                        "proc_name": "Drainage of Left Lower Arm Subcutaneous Tissue, Percutaneous",
+                        "description": "Removal of fluid from left arm tissue via needle aspiration."
+                    },
+                    {
+                        "proc_name": "Resection of Liver, Percutaneous Endoscopic Approach",
+                        "description": "Complete removal of the liver lobe via percutaneous endoscopic method."
+                    },
+                    {
+                        "proc_name": "Bypass Stomach to Ileum, Open Approach",
+                        "description": "Creating a new connection from the stomach to the ileum through open surgery."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Tibia",
+                        "description": "Surgical placement of fixation device in the left shin bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Intraluminal Device into Right Internal Jugular Vein",
+                        "description": "Placing a catheter or similar device into the jugular vein."
+                    },
+                    {
+                        "proc_name": "Insertion of Cardiac Lead into Chest Subcutaneous Tissue",
+                        "description": "Placement of an electrical lead under the skin in the chest."
+                    },
+                    {
+                        "proc_name": "Insertion of Pacemaker, Dual Chamber into Chest Subcutaneous Tissue",
+                        "description": "Surgical insertion of a dual-chamber pacemaker under the chest skin."
+                    },
+                    {
+                        "proc_name": "Resection of Thyroid Gland, Open Approach",
+                        "description": "Complete surgical removal of the thyroid gland."
+                    },
+                    {
+                        "proc_name": "Destruction of Bladder, Via Natural or Artificial Opening",
+                        "description": "Destruction of bladder tissue using endoscopic tools."
+                    },
+                    {
+                        "proc_name": "Excision of Gallbladder, Percutaneous Approach, Diagnostic",
+                        "description": "Minimally invasive gallbladder biopsy."
+                    },
+                    {
+                        "proc_name": "Excision of Bladder, Via Natural or Artificial Opening",
+                        "description": "Partial removal of the bladder via an internal orifice."
+                    },
+                    {
+                        "proc_name": "Resection of Stomach, Open Approach",
+                        "description": "Complete removal of the stomach via open surgery."
+                    }
+                ],
+                "labs": [
+                    {
+                        "lab_name": "Sodium; serum",
+                        "cpt_code": "84295"
+                    },
+                    {
+                        "lab_name": "Creatinine; blood",
+                        "cpt_code": "82565"
+                    },
+                    {
+                        "lab_name": "Urinalysis, automated, with microscopy",
+                        "cpt_code": "81001"
+                    },
+                    {
+                        "lab_name": "Urinalysis, non-automated, without microscopy",
+                        "cpt_code": "81002"
+                    },
+                    {
+                        "lab_name": "Lipid panel",
+                        "cpt_code": "80061"
+                    },
+                    {
+                        "lab_name": "Thyroid stimulating hormone (TSH)",
+                        "cpt_code": "84443"
+                    },
+                    {
+                        "lab_name": "Cobalamin (Vitamin B-12)",
+                        "cpt_code": "82607"
+                    },
+                    {
+                        "lab_name": "Vitamin D; 25 hydroxy",
+                        "cpt_code": "82306"
+                    }
+                ],
+                "patient_ref": {
+                    "$oid": "699690a19d664b27a141ad28"
+                },
+                "provider_ref": {
+                    "$oid": "6996914f9d664b27a141ad7e"
+                }
+            },
+            {
+                "_id": {
+                    "$oid": "6996a0c29d664b27a141aecf"
+                },
+                "visit_id": 19,
+                "patient_id": 3,
+                "provider_id": 39,
+                "visit_date": {
+                    "$date": "2025-01-10T00:00:00Z"
+                },
+                "symptoms": [
+                    "Sudden onset of chest pain and dizziness",
+                    "Loss of appetite and unintended weight loss"
+                ],
+                "diagnoses": [
+                    {
+                        "name": "Cellulitis of left lower limb",
+                        "icd10_code": "L03.116"
+                    },
+                    {
+                        "name": "Generalized anxiety disorder",
+                        "icd10_code": "F41.1"
+                    },
+                    {
+                        "name": "Psoriasis vulgaris",
+                        "icd10_code": "L40.0"
+                    },
+                    {
+                        "name": "Headache",
+                        "icd10_code": "R51"
+                    },
+                    {
+                        "name": "Urinary tract infection, site not specified",
+                        "icd10_code": "N39.0"
+                    },
+                    {
+                        "name": "Hyperlipidemia, unspecified",
+                        "icd10_code": "E78.5"
+                    }
+                ],
+                "procedures": [
+                    {
+                        "proc_name": "Transfusion of Nonautologous Red Blood Cells into Peripheral Vein",
+                        "description": "Administration of donor red blood cells into peripheral vein."
+                    },
+                    {
+                        "proc_name": "Excision of Appendix, Via Natural or Artificial Opening Endoscopic",
+                        "description": "Partial removal of the appendix using endoscopic approach."
+                    },
+                    {
+                        "proc_name": "Repair Large Intestine, Open Approach",
+                        "description": "Surgical repair of large intestine using open approach."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Femur",
+                        "description": "Surgical placement of fixation device in the left thigh bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Endotracheal Airway into Trachea, Via Natural Opening",
+                        "description": "Placing a tube into the trachea to maintain an open airway."
+                    },
+                    {
+                        "proc_name": "Removal of Drainage Device from Trunk Subcutaneous Tissue",
+                        "description": "Surgical removal of previously inserted drainage device."
+                    },
+                    {
+                        "proc_name": "Repair Right Lower Leg Muscle, Open Approach",
+                        "description": "Surgical repair of muscle in right lower leg using open surgery."
+                    },
+                    {
+                        "proc_name": "Resection of Uterus, Open Approach",
+                        "description": "Complete surgical removal of the uterus."
+                    },
+                    {
+                        "proc_name": "Drainage of Left Lower Arm Subcutaneous Tissue, Percutaneous",
+                        "description": "Removal of fluid from left arm tissue via needle aspiration."
+                    },
+                    {
+                        "proc_name": "Resection of Liver, Percutaneous Endoscopic Approach",
+                        "description": "Complete removal of the liver lobe via percutaneous endoscopic method."
+                    },
+                    {
+                        "proc_name": "Bypass Stomach to Ileum, Open Approach",
+                        "description": "Creating a new connection from the stomach to the ileum through open surgery."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Tibia",
+                        "description": "Surgical placement of fixation device in the left shin bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Intraluminal Device into Right Internal Jugular Vein",
+                        "description": "Placing a catheter or similar device into the jugular vein."
+                    },
+                    {
+                        "proc_name": "Insertion of Cardiac Lead into Chest Subcutaneous Tissue",
+                        "description": "Placement of an electrical lead under the skin in the chest."
+                    },
+                    {
+                        "proc_name": "Insertion of Pacemaker, Dual Chamber into Chest Subcutaneous Tissue",
+                        "description": "Surgical insertion of a dual-chamber pacemaker under the chest skin."
+                    },
+                    {
+                        "proc_name": "Resection of Thyroid Gland, Open Approach",
+                        "description": "Complete surgical removal of the thyroid gland."
+                    },
+                    {
+                        "proc_name": "Destruction of Bladder, Via Natural or Artificial Opening",
+                        "description": "Destruction of bladder tissue using endoscopic tools."
+                    },
+                    {
+                        "proc_name": "Excision of Gallbladder, Percutaneous Approach, Diagnostic",
+                        "description": "Minimally invasive gallbladder biopsy."
+                    },
+                    {
+                        "proc_name": "Excision of Bladder, Via Natural or Artificial Opening",
+                        "description": "Partial removal of the bladder via an internal orifice."
+                    },
+                    {
+                        "proc_name": "Resection of Stomach, Open Approach",
+                        "description": "Complete removal of the stomach via open surgery."
+                    }
+                ],
+                "labs": [
+                    {
+                        "lab_name": "Vitamin D; 25 hydroxy",
+                        "cpt_code": "82306"
+                    },
+                    {
+                        "lab_name": "Sodium; serum",
+                        "cpt_code": "84295"
+                    },
+                    {
+                        "lab_name": "Natriuretic peptide",
+                        "cpt_code": "83880"
+                    },
+                    {
+                        "lab_name": "Hemoglobin A1c",
+                        "cpt_code": "83036"
+                    },
+                    {
+                        "lab_name": "Urinalysis, non-automated, without microscopy",
+                        "cpt_code": "81002"
+                    }
+                ],
+                "patient_ref": {
+                    "$oid": "699690a19d664b27a141ad28"
+                },
+                "provider_ref": {
+                    "$oid": "6996914f9d664b27a141ad7e"
+                }
+            },
+            {
+                "_id": {
+                    "$oid": "6996a0c29d664b27a141aed0"
+                },
+                "visit_id": 20,
+                "patient_id": 3,
+                "provider_id": 39,
+                "visit_date": {
+                    "$date": "2023-09-19T00:00:00Z"
+                },
+                "symptoms": [
+                    "Sudden onset of chest pain and dizziness",
+                    "Fatigue and low energy levels throughout the day",
+                    "Sharp pain in the lower back when bending"
+                ],
+                "diagnoses": [
+                    {
+                        "name": "Migraine, unspecified, not intractable, without status migrainosus",
+                        "icd10_code": "G43.909"
+                    }
+                ],
+                "procedures": [
+                    {
+                        "proc_name": "Transfusion of Nonautologous Red Blood Cells into Peripheral Vein",
+                        "description": "Administration of donor red blood cells into peripheral vein."
+                    },
+                    {
+                        "proc_name": "Excision of Appendix, Via Natural or Artificial Opening Endoscopic",
+                        "description": "Partial removal of the appendix using endoscopic approach."
+                    },
+                    {
+                        "proc_name": "Repair Large Intestine, Open Approach",
+                        "description": "Surgical repair of large intestine using open approach."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Femur",
+                        "description": "Surgical placement of fixation device in the left thigh bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Endotracheal Airway into Trachea, Via Natural Opening",
+                        "description": "Placing a tube into the trachea to maintain an open airway."
+                    },
+                    {
+                        "proc_name": "Removal of Drainage Device from Trunk Subcutaneous Tissue",
+                        "description": "Surgical removal of previously inserted drainage device."
+                    },
+                    {
+                        "proc_name": "Repair Right Lower Leg Muscle, Open Approach",
+                        "description": "Surgical repair of muscle in right lower leg using open surgery."
+                    },
+                    {
+                        "proc_name": "Resection of Uterus, Open Approach",
+                        "description": "Complete surgical removal of the uterus."
+                    },
+                    {
+                        "proc_name": "Drainage of Left Lower Arm Subcutaneous Tissue, Percutaneous",
+                        "description": "Removal of fluid from left arm tissue via needle aspiration."
+                    },
+                    {
+                        "proc_name": "Resection of Liver, Percutaneous Endoscopic Approach",
+                        "description": "Complete removal of the liver lobe via percutaneous endoscopic method."
+                    },
+                    {
+                        "proc_name": "Bypass Stomach to Ileum, Open Approach",
+                        "description": "Creating a new connection from the stomach to the ileum through open surgery."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Tibia",
+                        "description": "Surgical placement of fixation device in the left shin bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Intraluminal Device into Right Internal Jugular Vein",
+                        "description": "Placing a catheter or similar device into the jugular vein."
+                    },
+                    {
+                        "proc_name": "Insertion of Cardiac Lead into Chest Subcutaneous Tissue",
+                        "description": "Placement of an electrical lead under the skin in the chest."
+                    },
+                    {
+                        "proc_name": "Insertion of Pacemaker, Dual Chamber into Chest Subcutaneous Tissue",
+                        "description": "Surgical insertion of a dual-chamber pacemaker under the chest skin."
+                    },
+                    {
+                        "proc_name": "Resection of Thyroid Gland, Open Approach",
+                        "description": "Complete surgical removal of the thyroid gland."
+                    },
+                    {
+                        "proc_name": "Destruction of Bladder, Via Natural or Artificial Opening",
+                        "description": "Destruction of bladder tissue using endoscopic tools."
+                    },
+                    {
+                        "proc_name": "Excision of Gallbladder, Percutaneous Approach, Diagnostic",
+                        "description": "Minimally invasive gallbladder biopsy."
+                    },
+                    {
+                        "proc_name": "Excision of Bladder, Via Natural or Artificial Opening",
+                        "description": "Partial removal of the bladder via an internal orifice."
+                    },
+                    {
+                        "proc_name": "Resection of Stomach, Open Approach",
+                        "description": "Complete removal of the stomach via open surgery."
+                    }
+                ],
+                "labs": [
+                    {
+                        "lab_name": "Iron; serum",
+                        "cpt_code": "83540"
+                    },
+                    {
+                        "lab_name": "Urinalysis, automated, with microscopy",
+                        "cpt_code": "81001"
+                    }
+                ],
+                "patient_ref": {
+                    "$oid": "699690a19d664b27a141ad28"
+                },
+                "provider_ref": {
+                    "$oid": "6996914f9d664b27a141ad7e"
+                }
+            },
+            {
+                "_id": {
+                    "$oid": "6996a0c29d664b27a141aed1"
+                },
+                "visit_id": 21,
+                "patient_id": 3,
+                "provider_id": 39,
+                "visit_date": {
+                    "$date": "2023-12-26T00:00:00Z"
+                },
+                "symptoms": [
+                    "Swelling and redness around a wound",
+                    "Frequent gas and bloating",
+                    "Persistent cough and shortness of breath",
+                    "Sharp pain in the lower back when bending",
+                    "Frequent urination and excessive thirst",
+                    "Burning sensation during urination"
+                ],
+                "diagnoses": [
+                    {
+                        "name": "Unspecified asthma, uncomplicated",
+                        "icd10_code": "J45.909"
+                    },
+                    {
+                        "name": "Noninfective gastroenteritis and colitis, unspecified",
+                        "icd10_code": "K52.9"
+                    },
+                    {
+                        "name": "Psoriasis vulgaris",
+                        "icd10_code": "L40.0"
+                    },
+                    {
+                        "name": "Low back pain",
+                        "icd10_code": "M54.5"
+                    },
+                    {
+                        "name": "Acute upper respiratory infection, unspecified",
+                        "icd10_code": "J06.9"
+                    },
+                    {
+                        "name": "Presbyopia",
+                        "icd10_code": "H52.4"
+                    }
+                ],
+                "procedures": [
+                    {
+                        "proc_name": "Transfusion of Nonautologous Red Blood Cells into Peripheral Vein",
+                        "description": "Administration of donor red blood cells into peripheral vein."
+                    },
+                    {
+                        "proc_name": "Excision of Appendix, Via Natural or Artificial Opening Endoscopic",
+                        "description": "Partial removal of the appendix using endoscopic approach."
+                    },
+                    {
+                        "proc_name": "Repair Large Intestine, Open Approach",
+                        "description": "Surgical repair of large intestine using open approach."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Femur",
+                        "description": "Surgical placement of fixation device in the left thigh bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Endotracheal Airway into Trachea, Via Natural Opening",
+                        "description": "Placing a tube into the trachea to maintain an open airway."
+                    },
+                    {
+                        "proc_name": "Removal of Drainage Device from Trunk Subcutaneous Tissue",
+                        "description": "Surgical removal of previously inserted drainage device."
+                    },
+                    {
+                        "proc_name": "Repair Right Lower Leg Muscle, Open Approach",
+                        "description": "Surgical repair of muscle in right lower leg using open surgery."
+                    },
+                    {
+                        "proc_name": "Resection of Uterus, Open Approach",
+                        "description": "Complete surgical removal of the uterus."
+                    },
+                    {
+                        "proc_name": "Drainage of Left Lower Arm Subcutaneous Tissue, Percutaneous",
+                        "description": "Removal of fluid from left arm tissue via needle aspiration."
+                    },
+                    {
+                        "proc_name": "Resection of Liver, Percutaneous Endoscopic Approach",
+                        "description": "Complete removal of the liver lobe via percutaneous endoscopic method."
+                    },
+                    {
+                        "proc_name": "Bypass Stomach to Ileum, Open Approach",
+                        "description": "Creating a new connection from the stomach to the ileum through open surgery."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Tibia",
+                        "description": "Surgical placement of fixation device in the left shin bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Intraluminal Device into Right Internal Jugular Vein",
+                        "description": "Placing a catheter or similar device into the jugular vein."
+                    },
+                    {
+                        "proc_name": "Insertion of Cardiac Lead into Chest Subcutaneous Tissue",
+                        "description": "Placement of an electrical lead under the skin in the chest."
+                    },
+                    {
+                        "proc_name": "Insertion of Pacemaker, Dual Chamber into Chest Subcutaneous Tissue",
+                        "description": "Surgical insertion of a dual-chamber pacemaker under the chest skin."
+                    },
+                    {
+                        "proc_name": "Resection of Thyroid Gland, Open Approach",
+                        "description": "Complete surgical removal of the thyroid gland."
+                    },
+                    {
+                        "proc_name": "Destruction of Bladder, Via Natural or Artificial Opening",
+                        "description": "Destruction of bladder tissue using endoscopic tools."
+                    },
+                    {
+                        "proc_name": "Excision of Gallbladder, Percutaneous Approach, Diagnostic",
+                        "description": "Minimally invasive gallbladder biopsy."
+                    },
+                    {
+                        "proc_name": "Excision of Bladder, Via Natural or Artificial Opening",
+                        "description": "Partial removal of the bladder via an internal orifice."
+                    },
+                    {
+                        "proc_name": "Resection of Stomach, Open Approach",
+                        "description": "Complete removal of the stomach via open surgery."
+                    }
+                ],
+                "labs": [
+                    {
+                        "lab_name": "Comprehensive metabolic panel",
+                        "cpt_code": "80053"
+                    },
+                    {
+                        "lab_name": "Natriuretic peptide",
+                        "cpt_code": "83880"
+                    },
+                    {
+                        "lab_name": "Cobalamin (Vitamin B-12)",
+                        "cpt_code": "82607"
+                    },
+                    {
+                        "lab_name": "Vitamin D; 25 hydroxy",
+                        "cpt_code": "82306"
+                    }
+                ],
+                "patient_ref": {
+                    "$oid": "699690a19d664b27a141ad28"
+                },
+                "provider_ref": {
+                    "$oid": "6996914f9d664b27a141ad7e"
+                }
+            },
+            {
+                "_id": {
+                    "$oid": "6996a0c39d664b27a141aed2"
+                },
+                "visit_id": 22,
+                "patient_id": 3,
+                "provider_id": 39,
+                "visit_date": {
+                    "$date": "2023-11-08T00:00:00Z"
+                },
+                "symptoms": [
+                    "Frequent gas and bloating",
+                    "Intermittent fever and chills",
+                    "Dry mouth and sore throat",
+                    "Painful muscle cramps during the night",
+                    "Episodes of rapid heartbeat and palpitations",
+                    "Fatigue and low energy levels throughout the day"
+                ],
+                "diagnoses": [
+                    {
+                        "name": "Acute upper respiratory infection, unspecified",
+                        "icd10_code": "J06.9"
+                    },
+                    {
+                        "name": "Presbyopia",
+                        "icd10_code": "H52.4"
+                    },
+                    {
+                        "name": "Hyperlipidemia, unspecified",
+                        "icd10_code": "E78.5"
+                    },
+                    {
+                        "name": "Chest pain, unspecified",
+                        "icd10_code": "R07.9"
+                    },
+                    {
+                        "name": "Psoriasis vulgaris",
+                        "icd10_code": "L40.0"
+                    },
+                    {
+                        "name": "Urinary tract infection, site not specified",
+                        "icd10_code": "N39.0"
+                    }
+                ],
+                "procedures": [
+                    {
+                        "proc_name": "Transfusion of Nonautologous Red Blood Cells into Peripheral Vein",
+                        "description": "Administration of donor red blood cells into peripheral vein."
+                    },
+                    {
+                        "proc_name": "Excision of Appendix, Via Natural or Artificial Opening Endoscopic",
+                        "description": "Partial removal of the appendix using endoscopic approach."
+                    },
+                    {
+                        "proc_name": "Repair Large Intestine, Open Approach",
+                        "description": "Surgical repair of large intestine using open approach."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Femur",
+                        "description": "Surgical placement of fixation device in the left thigh bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Endotracheal Airway into Trachea, Via Natural Opening",
+                        "description": "Placing a tube into the trachea to maintain an open airway."
+                    },
+                    {
+                        "proc_name": "Removal of Drainage Device from Trunk Subcutaneous Tissue",
+                        "description": "Surgical removal of previously inserted drainage device."
+                    },
+                    {
+                        "proc_name": "Repair Right Lower Leg Muscle, Open Approach",
+                        "description": "Surgical repair of muscle in right lower leg using open surgery."
+                    },
+                    {
+                        "proc_name": "Resection of Uterus, Open Approach",
+                        "description": "Complete surgical removal of the uterus."
+                    },
+                    {
+                        "proc_name": "Drainage of Left Lower Arm Subcutaneous Tissue, Percutaneous",
+                        "description": "Removal of fluid from left arm tissue via needle aspiration."
+                    },
+                    {
+                        "proc_name": "Resection of Liver, Percutaneous Endoscopic Approach",
+                        "description": "Complete removal of the liver lobe via percutaneous endoscopic method."
+                    },
+                    {
+                        "proc_name": "Bypass Stomach to Ileum, Open Approach",
+                        "description": "Creating a new connection from the stomach to the ileum through open surgery."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Tibia",
+                        "description": "Surgical placement of fixation device in the left shin bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Intraluminal Device into Right Internal Jugular Vein",
+                        "description": "Placing a catheter or similar device into the jugular vein."
+                    },
+                    {
+                        "proc_name": "Insertion of Cardiac Lead into Chest Subcutaneous Tissue",
+                        "description": "Placement of an electrical lead under the skin in the chest."
+                    },
+                    {
+                        "proc_name": "Insertion of Pacemaker, Dual Chamber into Chest Subcutaneous Tissue",
+                        "description": "Surgical insertion of a dual-chamber pacemaker under the chest skin."
+                    },
+                    {
+                        "proc_name": "Resection of Thyroid Gland, Open Approach",
+                        "description": "Complete surgical removal of the thyroid gland."
+                    },
+                    {
+                        "proc_name": "Destruction of Bladder, Via Natural or Artificial Opening",
+                        "description": "Destruction of bladder tissue using endoscopic tools."
+                    },
+                    {
+                        "proc_name": "Excision of Gallbladder, Percutaneous Approach, Diagnostic",
+                        "description": "Minimally invasive gallbladder biopsy."
+                    },
+                    {
+                        "proc_name": "Excision of Bladder, Via Natural or Artificial Opening",
+                        "description": "Partial removal of the bladder via an internal orifice."
+                    },
+                    {
+                        "proc_name": "Resection of Stomach, Open Approach",
+                        "description": "Complete removal of the stomach via open surgery."
+                    }
+                ],
+                "labs": [
+                    {
+                        "lab_name": "Urea nitrogen; quantitative",
+                        "cpt_code": "84550"
+                    },
+                    {
+                        "lab_name": "Bilirubin; total",
+                        "cpt_code": "82247"
+                    },
+                    {
+                        "lab_name": "Vitamin D; 25 hydroxy",
+                        "cpt_code": "82306"
+                    },
+                    {
+                        "lab_name": "Creatinine; blood",
+                        "cpt_code": "82565"
+                    },
+                    {
+                        "lab_name": "Thyroid stimulating hormone (TSH)",
+                        "cpt_code": "84443"
+                    },
+                    {
+                        "lab_name": "Sodium; serum",
+                        "cpt_code": "84295"
+                    }
+                ],
+                "patient_ref": {
+                    "$oid": "699690a19d664b27a141ad28"
+                },
+                "provider_ref": {
+                    "$oid": "6996914f9d664b27a141ad7e"
+                }
+            },
+            {
+                "_id": {
+                    "$oid": "6996a0c39d664b27a141aed3"
+                },
+                "visit_id": 23,
+                "patient_id": 3,
+                "provider_id": 39,
+                "visit_date": {
+                    "$date": "2025-04-05T00:00:00Z"
+                },
+                "symptoms": [
+                    "Painful muscle cramps during the night",
+                    "Difficulty falling asleep and frequent waking",
+                    "Difficulty swallowing solid foods",
+                    "Intermittent fever and chills",
+                    "Sensitivity to cold and pale fingers",
+                    "Severe headache with light sensitivity"
+                ],
+                "diagnoses": [
+                    {
+                        "name": "Cellulitis of left lower limb",
+                        "icd10_code": "L03.116"
+                    },
+                    {
+                        "name": "Pain in right knee",
+                        "icd10_code": "M25.561"
+                    },
+                    {
+                        "name": "Essential (primary) hypertension",
+                        "icd10_code": "I10"
+                    },
+                    {
+                        "name": "Headache",
+                        "icd10_code": "R51"
+                    }
+                ],
+                "procedures": [
+                    {
+                        "proc_name": "Transfusion of Nonautologous Red Blood Cells into Peripheral Vein",
+                        "description": "Administration of donor red blood cells into peripheral vein."
+                    },
+                    {
+                        "proc_name": "Excision of Appendix, Via Natural or Artificial Opening Endoscopic",
+                        "description": "Partial removal of the appendix using endoscopic approach."
+                    },
+                    {
+                        "proc_name": "Repair Large Intestine, Open Approach",
+                        "description": "Surgical repair of large intestine using open approach."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Femur",
+                        "description": "Surgical placement of fixation device in the left thigh bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Endotracheal Airway into Trachea, Via Natural Opening",
+                        "description": "Placing a tube into the trachea to maintain an open airway."
+                    },
+                    {
+                        "proc_name": "Removal of Drainage Device from Trunk Subcutaneous Tissue",
+                        "description": "Surgical removal of previously inserted drainage device."
+                    },
+                    {
+                        "proc_name": "Repair Right Lower Leg Muscle, Open Approach",
+                        "description": "Surgical repair of muscle in right lower leg using open surgery."
+                    },
+                    {
+                        "proc_name": "Resection of Uterus, Open Approach",
+                        "description": "Complete surgical removal of the uterus."
+                    },
+                    {
+                        "proc_name": "Drainage of Left Lower Arm Subcutaneous Tissue, Percutaneous",
+                        "description": "Removal of fluid from left arm tissue via needle aspiration."
+                    },
+                    {
+                        "proc_name": "Resection of Liver, Percutaneous Endoscopic Approach",
+                        "description": "Complete removal of the liver lobe via percutaneous endoscopic method."
+                    },
+                    {
+                        "proc_name": "Bypass Stomach to Ileum, Open Approach",
+                        "description": "Creating a new connection from the stomach to the ileum through open surgery."
+                    },
+                    {
+                        "proc_name": "Insertion of Internal Fixation Device into Left Tibia",
+                        "description": "Surgical placement of fixation device in the left shin bone."
+                    },
+                    {
+                        "proc_name": "Insertion of Intraluminal Device into Right Internal Jugular Vein",
+                        "description": "Placing a catheter or similar device into the jugular vein."
+                    },
+                    {
+                        "proc_name": "Insertion of Cardiac Lead into Chest Subcutaneous Tissue",
+                        "description": "Placement of an electrical lead under the skin in the chest."
+                    },
+                    {
+                        "proc_name": "Insertion of Pacemaker, Dual Chamber into Chest Subcutaneous Tissue",
+                        "description": "Surgical insertion of a dual-chamber pacemaker under the chest skin."
+                    },
+                    {
+                        "proc_name": "Resection of Thyroid Gland, Open Approach",
+                        "description": "Complete surgical removal of the thyroid gland."
+                    },
+                    {
+                        "proc_name": "Destruction of Bladder, Via Natural or Artificial Opening",
+                        "description": "Destruction of bladder tissue using endoscopic tools."
+                    },
+                    {
+                        "proc_name": "Excision of Gallbladder, Percutaneous Approach, Diagnostic",
+                        "description": "Minimally invasive gallbladder biopsy."
+                    },
+                    {
+                        "proc_name": "Excision of Bladder, Via Natural or Artificial Opening",
+                        "description": "Partial removal of the bladder via an internal orifice."
+                    },
+                    {
+                        "proc_name": "Resection of Stomach, Open Approach",
+                        "description": "Complete removal of the stomach via open surgery."
+                    }
+                ],
+                "labs": [
+                    {
+                        "lab_name": "Cobalamin (Vitamin B-12)",
+                        "cpt_code": "82607"
+                    },
+                    {
+                        "lab_name": "Lipid panel",
+                        "cpt_code": "80061"
+                    },
+                    {
+                        "lab_name": "Prostate specific antigen (PSA); total",
+                        "cpt_code": "84153"
+                    },
+                    {
+                        "lab_name": "Urinalysis, non-automated, without microscopy",
+                        "cpt_code": "81002"
+                    },
+                    {
+                        "lab_name": "Comprehensive metabolic panel",
+                        "cpt_code": "80053"
+                    },
+                    {
+                        "lab_name": "Urea nitrogen; quantitative",
+                        "cpt_code": "84550"
+                    }
+                ],
+                "patient_ref": {
+                    "$oid": "699690a19d664b27a141ad28"
+                },
+                "provider_ref": {
+                    "$oid": "6996914f9d664b27a141ad7e"
+                }
+            }
+        ]
+    }
+]
