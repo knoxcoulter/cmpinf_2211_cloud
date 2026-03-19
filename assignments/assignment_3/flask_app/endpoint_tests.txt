@@ -1,0 +1,41 @@
+Wizard Books API - curl Test Commands
+======================================
+
+GET all books
+-------------
+curl http://localhost:5000/books
+
+
+GET a specific book
+-------------------
+curl http://localhost:5000/books/15
+
+
+POST a new book
+---------------
+curl -X POST http://localhost:5000/books \
+-H "Content-Type: application/json" \
+-d '{"title": "Clean Code", "isbn": "9780132350884", "published_year": 2008, "price": 49.99, "publisher_id": 1}'
+
+
+PATCH (update) a book
+---------------------
+curl -X PATCH http://localhost:5000/books/15 \
+-H "Content-Type: application/json" \
+-d '{"quantity": 50}'
+
+
+DELETE a book
+-------------
+curl -X DELETE http://localhost:5000/books/202
+
+
+Notes
+-----
+- Run these in a separate terminal from the one running the Flask app.
+- Replace /books/1 with the book_id you want to target.
+- Flask default runs on http://localhost:5000 unless you changed the port.
+- POST accepts: title, isbn, published_year, price, publisher_id
+- PATCH accepts any subset of: title, isbn, published_year, price, publisher_id
+- Authors and inventory are managed via separate tables (book_author, inventory)
+  and are returned in GET responses but not set directly through /books endpoints.
