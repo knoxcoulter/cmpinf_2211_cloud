@@ -1,0 +1,31 @@
+services:
+  spark-master:
+    image: apache/spark:3.5.3
+    container_name: spark-master
+    command: ["/opt/spark/bin/spark-class", "org.apache.spark.deploy.master.Master"]
+    ports:
+      - "8080:8080"
+      - "7077:7077"
+
+  spark-worker:
+    image: apache/spark:3.5.3
+    container_name: spark-worker
+    command: ["/opt/spark/bin/spark-class", "org.apache.spark.deploy.worker.Worker", "spark://spark-master:7077"]
+    environment:
+      - SPARK_WORKER_MEMORY=1G
+    depends_on:
+      - spark-master
+
+  spark-submit:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: spark-submit
+    volumes:
+      - ./app:/app
+    entrypoint: ["tail", "-f", "/dev/null"]
+    environment:
+      - HOME=/root
+    depends_on:
+      - spark-master
+    user: root
