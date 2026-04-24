@@ -1,0 +1,7 @@
+Loan Approval Prediction – Model Accuracy Scores
+==================================================
+Logistic Regression: 0.7835
+Decision Tree: 0.7732
+Random Forest: 0.7835
+--------------------------------------------------
+Best Model: Logistic Regression (0.7835)
