@@ -20,18 +20,19 @@ DATA_URL = (
     "/refs/heads/main/apache_spark/loan_data.csv"
 )
 
-# Spark's Hadoop HTTP filesystem doesn't support listStatus, so we download
+# Spark's Hadoop HTTP filesystem doesn't support listStatus, so download
 # the file locally first and read from the local path instead.
 local_csv = os.path.join(tempfile.gettempdir(), "loan_data.csv")
 urllib.request.urlretrieve(DATA_URL, local_csv)
 
+# Spark's read CSV
 df = spark.read.csv(local_csv, header=True, inferSchema=True)
 
 # --- 1. MISSING VALUES ---
 #
 # Strategy:
 #   - Categorical columns (Gender, Married, Dependents, Self_Employed):
-#     fill with the mode (most frequent value). These are nominal; the mode
+#     fill with the mode (most frequent value). These are nominal. The mode
 #     preserves the existing distribution without introducing an artificial
 #     category like "Unknown", which would then require special handling later.
 #   - LoanAmount: fill with the median. Loan amounts are right-skewed, so the
@@ -39,8 +40,10 @@ df = spark.read.csv(local_csv, header=True, inferSchema=True)
 #   - Loan_Amount_Term: fill with the mode. The vast majority of loans are
 #     360-month terms, so the mode reflects the realistic default.
 #   - Credit_History: fill with the mode (1.0). Missing credit history is
-#     ambiguous; using the mode avoids falsely penalising applicants.
+#     ambiguous; using the mode avoids falsely penalizing applicants.
 
+# Create a function to calculate mode,
+# since pandas' .mode() is unavailable in Spark
 def mode(df, col):
     return (
         df.groupBy(col)
@@ -49,6 +52,8 @@ def mode(df, col):
         .first()[0]
     )
 
+# Calculate modes of categoricals (and loan amount term) to fill nulls
+# As a dictionary to programatically fill na's with .fillna()
 cat_fill = {
     "Gender": mode(df, "Gender"),
     "Married": mode(df, "Married"),
@@ -58,9 +63,14 @@ cat_fill = {
     "Credit_History": mode(df, "Credit_History"),
 }
 
+# Calculate loan amount median manually to fill nulls
 loan_amount_median = df.approxQuantile("LoanAmount", [0.5], 0.001)[0]
 
+# Fill categoricals with their modes with .fillna(), which accepts a 
+# dict where the keys are column names and the values are what to fill in.
 df = df.fillna(cat_fill)
+
+# Fill LoanAmount with its median
 df = df.fillna({"LoanAmount": loan_amount_median})
 
 # --- 2. OUTLIER DETECTION & TREATMENT ---
@@ -72,42 +82,43 @@ df = df.fillna({"LoanAmount": loan_amount_median})
 # discretisation step in section 3 will group extreme values into a top bucket,
 # which effectively limits their influence without discarding information.
 #
-# For reference, IQR-based detection on ApplicantIncome shows ~100 values above
-# the upper fence (Q3 + 1.5*IQR), confirming these are real high earners rather
+# For reference, IQR-based detection on ApplicantIncome shows ~50 values (12% of data)
+# above the upper fence (Q3 + 1.5*IQR), confirming these are real high earners rather
 # than data entry errors.
 
 # --- 3. DISCRETISATION ---
 #
-# ApplicantIncome  → 4 bins: Low / Medium / High / Very High
-#   Breakpoints chosen at roughly the 25th, 50th, and 75th percentiles so each
-#   bucket has a comparable number of applicants.  Very High (>10,000) captures
+# ApplicantIncome: 4 bins: Low / Medium / High / Very High
+#   Breakpoints chosen at the 25th, 50th, and 75th percentiles so each
+#   bucket has a comparable number of applicants.  Very High (>75 %ile) captures
 #   the outlier region identified above.
 #
-# CoapplicantIncome → 3 bins: None / Low / High
-#   A large share of applicants have zero co-applicant income, so "None" (0)
-#   is its own bucket.  Above zero we split at ~2,500 (near the median of
+# CoapplicantIncome: 3 bins: None / Low / High
+#   A large share (~50%) of applicants have zero co-applicant income, so "None" (0)
+#   is its own bucket.  Above zero, split at ~2,200 (near the median of
 #   non-zero values) into Low and High.
 #
-# LoanAmount → 3 bins: Small / Medium / Large
+# LoanAmount: 3 bins: Small / Medium / Large
 #   Breakpoints at 100 and 200 (thousands) align with natural product tiers
 #   (personal / home improvement / home purchase).
 #
-# Loan_Amount_Term → 3 bins: Short / Medium / Long
+# Loan_Amount_Term: 3 bins: Short / Medium / Long
 #   ≤180 months (≤15 years) = Short; 181–360 = Medium (the dominant group);
-#   >360 = Long.  This captures the step-function distribution of term values.
+#   >360 = Long.  This captures the step-function distribution of term values,
+#   almost entirely concentrated at 180, 360, and 480 months.
 
 df = df.withColumn(
     "ApplicantIncome_bin",
-    F.when(F.col("ApplicantIncome") <= 2500, "Low")
-     .when(F.col("ApplicantIncome") <= 4500, "Medium")
-     .when(F.col("ApplicantIncome") <= 10000, "High")
+    F.when(F.col("ApplicantIncome") <= 2877, "Low")
+     .when(F.col("ApplicantIncome") <= 3812, "Medium")
+     .when(F.col("ApplicantIncome") <= 5795, "High")
      .otherwise("Very High"),
 )
 
 df = df.withColumn(
     "CoapplicantIncome_bin",
     F.when(F.col("CoapplicantIncome") == 0, "None")
-     .when(F.col("CoapplicantIncome") <= 2500, "Low")
+     .when(F.col("CoapplicantIncome") <= 2200, "Low")
      .otherwise("High"),
 )
 
@@ -139,7 +150,7 @@ df = df.withColumn(
 #   Dependents      – more dependents increase financial burden.
 #   Education       – graduates typically have higher and more stable income.
 #   Self_Employed   – self-employment introduces income volatility.
-#   Credit_History  – strongest single predictor of loan repayment in practice.
+#   Credit_History  – strongest single predictor of loan repayment.
 #   Property_Area   – property location correlates with collateral value and
 #                     local economic conditions.
 #   ApplicantIncome_bin      – income level after discretisation.
@@ -170,13 +181,17 @@ label_col = "Loan_Status"
 # frequency (most frequent = 0). This satisfies MLlib's requirement for numeric
 # input without implying any ordinal relationship between categories.
 
+# Map categorical features to their string indexed encoding
 indexers = [
     StringIndexer(inputCol=c, outputCol=c + "_idx", handleInvalid="keep")
     for c in categorical_features + [label_col]
 ]
 
+# Create a list of feature names, including the categorical indices created
+# above, and the numeric features, together making up all features.
 feature_cols = [c + "_idx" for c in categorical_features] + numeric_features
 
+# Combine input features and target variable into a single feature vector for ML.
 assembler = VectorAssembler(inputCols=feature_cols, outputCol="features")
 
 # --- 6. TRAIN / TEST SPLIT ---
@@ -185,14 +200,18 @@ train_df, test_df = df.randomSplit([0.8, 0.2], seed=42)
 
 # --- 7. CLASSIFIERS ---
 
+# Build evaluator for classifier accuracy on test
 evaluator = MulticlassClassificationEvaluator(
     labelCol="Loan_Status_idx",
     predictionCol="prediction",
     metricName="accuracy",
 )
 
+# Build function to build feature vector , bring in classifier,
+# fit classifier to training data, predict on test data,
+# run evaluator to return accuracy
 def build_and_evaluate(classifier, name):
-    pipeline = Pipeline(stages=indexers + [assembler, classifier])
+    pipeline = Pipeline(stages=indexers + [assembler, classifier]) # VectorAssembler, classifier (e.g. LogisticRegression()) modules happen here
     model = pipeline.fit(train_df)
     predictions = model.transform(test_df)
     accuracy = evaluator.evaluate(predictions)
@@ -237,12 +256,15 @@ rf_name, rf_acc = build_and_evaluate(rf, "Random Forest")
 #
 # All three models are evaluated on the same held-out 20 % split so comparisons
 # are fair. Logistic Regression serves as the interpretable baseline. If the
-# Decision Tree outperforms it, the relationship between features and approval
-# is likely non-linear. Random Forest is expected to be the strongest model
-# because ensemble averaging reduces the high variance typical of decision trees
-# trained on small datasets. Credit_History is the dominant feature in tree
-# models; its near-zero missing-value rate after imputation means the imputation
-# choice has little effect on final performance.
+# Decision Tree outperforms it, which it does not, the relationship between
+# features and approval is likely non-linear. Random Forest is expected 
+# to be the strongest model because ensemble averaging reduces the high variance
+# typical of decision trees trained on small datasets. 
+# After running the models, surprisingly Random Forest and Logistic Regression
+# returned identical accuracy metrics on test data, tied at 78.4%, with Decision 
+# Tree slightly behind at 77.3%. The Random Forest - Decision tree gap confirms 
+# ensemble averaging reduces variance, but the LR/RF tie suggests the dataset
+# is likely too small for RF to find non-linear patterns that LR misses.
 
 results = [
     (lr_name, lr_acc),
