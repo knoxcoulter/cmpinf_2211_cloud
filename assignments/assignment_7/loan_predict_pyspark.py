@@ -262,7 +262,7 @@ rf_name, rf_acc = build_and_evaluate(rf, "Random Forest")
 # typical of decision trees trained on small datasets. 
 # After running the models, surprisingly Random Forest and Logistic Regression
 # returned identical accuracy metrics on test data, tied at 78.4%, with Decision 
-# Tree slightly behind at 77.3%. The Random Forest - Decision tree gap confirms 
+# Tree behind at 75.3%. The Random Forest - Decision tree gap confirms 
 # ensemble averaging reduces variance, but the LR/RF tie suggests the dataset
 # is likely too small for RF to find non-linear patterns that LR misses.
 
