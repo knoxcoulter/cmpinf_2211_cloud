@@ -1,3 +1,6 @@
+import urllib.request
+import tempfile
+import os
 from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
 from pyspark.ml.feature import StringIndexer, VectorAssembler
@@ -17,7 +20,12 @@ DATA_URL = (
     "/refs/heads/main/apache_spark/loan_data.csv"
 )
 
-df = spark.read.csv(DATA_URL, header=True, inferSchema=True)
+# Spark's Hadoop HTTP filesystem doesn't support listStatus, so we download
+# the file locally first and read from the local path instead.
+local_csv = os.path.join(tempfile.gettempdir(), "loan_data.csv")
+urllib.request.urlretrieve(DATA_URL, local_csv)
+
+df = spark.read.csv(local_csv, header=True, inferSchema=True)
 
 # --- 1. MISSING VALUES ---
 #
